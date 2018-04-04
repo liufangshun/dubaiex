@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12506 989 240 172">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-3 {
+        fill: #f2f2f2;
+      }
+
+      .cls-4 {
+        fill: #465374;
+        font-size: 14px;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+
+      .cls-5 {
+        fill: #2380fe;
+      }
+
+      .cls-6 {
+        font-size: 12px;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2107" data-name="Group 2107" transform="translate(-13280 63)">
+    <rect id="Rectangle_1128" data-name="Rectangle 1128" class="cls-1" width="240" height="160" rx="2" transform="translate(774 926)"/>
+    <g id="Rectangle_1129" data-name="Rectangle 1129" class="cls-2" transform="translate(794 966)">
+      <rect class="cls-7" width="200" height="120" rx="6"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="199" height="119" rx="5.5"/>
+    </g>
+    <g id="Group_1860" data-name="Group 1860" transform="translate(-217 340)">
+      <circle id="Ellipse_467" data-name="Ellipse 467" class="cls-3" cx="16.6" cy="16.6" r="16.6" transform="translate(1134.2 647.7)"/>
+      <rect id="Rectangle_901" data-name="Rectangle 901" class="cls-3" width="80.303" height="7" transform="translate(1111 693)"/>
+      <rect id="Rectangle_902" data-name="Rectangle 902" class="cls-3" width="64.303" height="7" transform="translate(1119 712)"/>
+    </g>
+    <text id="护照封面照" class="cls-4" transform="translate(859 951)"><tspan x="0" y="0">护照封面照</tspan></text>
+    <g id="Group_1861" data-name="Group 1861" transform="translate(-228 345)">
+      <path id="Path_576" data-name="Path 576" class="cls-5" d="M.773.5H80.227c.151,0,.273.356.273.8V25.7c0,.44-.122.8-.273.8H.773C.622,26.5.5,26.144.5,25.7V1.3C.5.856.622.5.773.5Z" transform="translate(1081.5 726.5)"/>
+      <text id="点击上传" class="cls-6" transform="translate(1098 745)"><tspan x="0" y="0">点击上传</tspan></text>
+    </g>
+  </g>
+</svg>

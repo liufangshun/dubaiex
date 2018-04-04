@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="my_deity"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<style>
+    .bgf8{background-color: #f8f8f8}
+</style>
+<body class="bgf8">
+<div id="wrap" class="markets other-wrap my-detail my-order">
+    <div class="sign-heads">
+        @@include('./include/header.html')
+    </div>
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title"> 
+                <div data-i18n="my_deity" class="tradTie"></div>
+                <div class="pagination-box">
+                    <ul class="pagination-list">
+                    </ul>
+                    <label class="turnover-log"><span data-sign="check"></span><a href="./turnoverLog.html?marketid=mbtc_eth" class="my-turnover-link" data-i18n="t_records"></a></label>        
+                </div>
+            </div>
+            <div class="other-body">
+                <div class="pege-left">
+                    <ul id="accordion" class="accordion">
+                        <li>       
+                            <div class="link bgf1">
+                                <img src="./imgs/orders-1.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                <ul class="submenu" style="display: block;">                      
+                                    <li><a href="./trade-order.html"  class="col90">Open Orders</a></li>
+                                    <li><a href="./trade-orderHistory.html" >Orders History</a></li>
+                                    <li><a href="./turnoverLog.html">Trade History</a></li>
+                                    <li><a href="./toLimitSet.html">Proce Protection</a></li>
+                                </ul>
+                            </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/setting.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                <ul class="submenu">
+                                    <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                    <li><a href="./toSafeSet.html">Security Settings</a></li>
+                                    <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                    <li><a href="./modify-buzPwd.html">Set Trading Password</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/my.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                <ul class="submenu" >
+                                <li><a href="./user-info.html">My Profile</a></li>
+                                <li><a href="#">Sunbmit a request</a></li>
+                                </ul>
+                        </li>
+                        </ul>
+                </div>
+                <div class="user-box">
+                    <ul class="tab-change" data-sign="order">
+                        <li class="on" data-i18n="limit">
+                            
+                        </li>
+                        <li data-i18n="plan_order"></li>
+                    </ul>
+                    <div class="dropdown-box box-right">
+                        <div class="dropdown-txt"><span>MBTC</span>
+                            <img src="./imgs/xiala.png" style="position: relative;left: 20px; bottom: 2px;" />
+                        </div>
+                        <ul class="dropdown-list">
+                            <li class="on"><img src="./imgs/c-btc.png" data-i18n="[alt]icon"><span>MBTC</span></li>
+                            <!-- <li class="on"><img src="./imgs/c-cny.png" data-i18n="[alt]icon"><span>CNY</span></li> -->
+                            <li><img src="./imgs/c-etc.png" data-i18n="[alt]icon"><span>ETH</span></li>
+                            <li><img src="./imgs/c-bitcny.png" data-i18n="[alt]icon"><span>BITCNY</span></li>
+                            <li><img src="./imgs/c-usdt.png" data-i18n="[alt]icon"><span>USDT</span></li>
+                        </ul>
+                        <div class="search-box">
+                            <input type="text" id="market-search" data-i18n="[placeholder]search" />
+                            <ul class="market-list">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="other-tables">
+                        <table class="table-order order-1th show">
+                            <thead>
+                                <tr>
+                                <th data-i18n="pend_time"></th>
+                                <th data-i18n="market"></th>
+                                <th data-i18n="type"></th>
+                                <th data-i18n="num_pend"></th>
+                                <th data-i18n="unit_price"></th>
+                                <th data-i18n="business"></th>
+                                <th><span data-i18n="operation"></span><span class="batch-back" data-type="1" data-i18n="BULK"></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr class="red">
+                                <td>2017-01-02 13:12:32</td>
+                                <td><span>BTC</span>/<span>VTC</span></td>
+                                <td>买入</td>
+                                <td><span>82.21</span>/<span>12.00</span>(<span>VTC</span>)</td>
+                                <td><span>1.0031</span>(<span>BTC</span>)</td>
+                                <td><span>14.2</span>(<span>BTC</span>)</td>
+                                <td><a href="javascript:;">撤销</a></td>
+                                </tr>
+                                <tr class="green">
+                                <td>2017-01-02 13:12:32</td>
+                                <td><span>BTC</span>/<span>ANS</span></td>
+                                <td>卖出</td>
+                                <td><span>62.21</span>/<span>12.00</span>(<span>ANS</span>)</td>
+                                <td><span>0.0031</span>(<span>BTC</span>)</td>
+                                <td><span>4.21</span>(<span>BTC</span>)</td>
+                                <td><a href="javascript:;">撤销</a></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <table class="table-order order-2th">
+                            <thead>
+                                <tr>
+                                <th data-i18n="pend_time"></th>
+                                <th data-i18n="market"></th>
+                                <th data-i18n="type"></th>
+                                <th data-i18n="measured"></th>
+                                <th data-i18n="trigger_price"></th>
+                                <th data-i18n="Entrust"></th>
+                                <th><span data-i18n="operation"></span><span class="batch-back" data-type="2" data-i18n="BULK"></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr class="red">
+                                <td>2017-01-02 13:12:32</td>
+                                <td><span>BTC</span>/<span>VTC</span></td>
+                                <td>买入</td>
+                                <td><span>12.00</span>(<span>VTC</span>)</td>
+                                <td>
+                                    <label>追高：<span>--</span></label>
+                                    <label>抄底：<span>1.0031</span>(<span>BTC</span>)</label>
+                                </td>
+                                <td>
+                                    <label>追高：<span>--</span></label>
+                                    <label>抄底：<span>1.0031</span>(<span>BTC</span>)</label>
+                                </td>
+                                <td><a href="javascript:;">撤销</a></td>
+                                </tr>
+                                <tr class="green">
+                                <td>2017-01-02 13:12:32</td>
+                                <td><span>BTC</span>/<span>ANS</span></td>
+                                <td>卖出</td>
+                                <td><span>62.21</span>(<span>ANS</span>)</td>
+                                <td>
+                                    <label>止盈：<span>--</span></label>
+                                    <label>止损：<span>1.0031</span>(<span>BTC</span>)</label>
+                                </td>
+                                <td>
+                                    <label>止盈：<span>--</span></label>
+                                    <label>止损：<span>1.0031</span>(<span>BTC</span>)</label>
+                                </td>
+                                <td><a href="javascript:;">撤销</a></td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                   
+                </div>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-cancel">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn" data-action="close" data-i18n="cancel"></button>
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>  
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-buz">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body">
+               <form class="mod-form" id="buz-form" onsubmit="return false;">
+                  <div class="form-group buz-group">
+                     <label for="input-pwd" data-i18n="trader_password"></label><input type="password" id="input-pwd" data-i18n="[placeholder]enter_password" />
+                     <div class="error-tips"></div>
+                     <div class="close-buzPwd hide">
+                        <label><input type="radio" name="close" value="4"><span data-i18n="never"></span></label>
+                        <label><input type="radio" name="close" value="2"><span data-i18n="first_order"></span></label>
+                        <label><input type="radio" name="close" value="3"><span data-i18n="every_time"></span></label>
+                     </div>
+                     <a href="./resetbuzpwd.html" target="_blank" data-i18n="forget_passcode"></a>
+                  </div>
+                  <div class="form-group buz-group">
+                     <p class="buz-tips hide"><span data-i18n="warm_tip"></span><span data-type="1" data-i18n="return"></span></p>
+                     <p class="buz-tips"><span data-i18n="temporarily"></span><span data-type="2" data-i18n="clse_tran"></span></p>
+                  </div>
+                  <div class="form-group tc">
+                     <button type="button" class="btn" data-action="close" data-i18n="cancel"></button>
+                     <button type="button" class="btn btn-default hide" id="to-modify" data-sign="update" data-i18n="modify"></button>
+                     <button type="button" class="btn btn-default" id="to-addr" data-sign="ok" data-i18n="certain"></button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+
+</body>
+</html>

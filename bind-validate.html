@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="phone_google"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/login.css">
+</head>
+<style>#wrap{margin-bottom: 60px;}.w-box{width:1200px;height:660px;margin:auto;background-color:white;}.box-title{font-size:30px;color:#464646;height:45px;padding-bottom:40px;background:#f8f8f8;}.login-box{text-align:center;padding:95px 20px;margin-top:50px !important;}.phoneTile{color:#464646;font-size:26px;}.box-ctntxt{font-size:16px;color:#999;padding-top:45px;margin-bottom:80px;}.bind-btn{padding:12px 30px;background-color:#009cff;color:white;border-radius:4px;font-size:18px;margin-right:30px;}</style>
+<body class="bgf8">
+    <div id="wrap" class="markets market">
+        <div class="sign-heads" id="header">
+            @@include('./include/header.html')
+        </div>
+        <div class="w-box">
+                <h2 class="box-title" data-i18n="authenty" style="font-size: 30px; color: #464646;">Just one more step</h2>
+                <div class="login-box ls choose-validate" id="register-box">
+                    <p data-i18n="phone_google" class="phoneTile"></p>
+                    <p class="box-tip box-ctntxt" data-i18n="account_safe"></p>
+                    <a href="./set-gugValidate.html" class="bind-btn"><span data-i18n="bind_google"></span></a>
+                    <a href="./bind-phone.html" class="bind-btn hide"><i class="icon icon-phone3"></i><span data-i18n="bind_phone"></span></a>
+                    <!-- <p><a href="//en.wikipedia.org/wiki/Google_Authenticator">Learn more about two-factor authentication.</a></p> -->
+                </div>
+        </div>
+   </div>
+   @@include('./include/footer.html')
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="Trade_back"></title>
+   <!-- <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/login.css"> -->
+</head>
+<body class="bgf8">
+    <div id="bg-wrap" class="reg-log">
+        <div class="sign-heads">
+            @@include('./include/header.html')
+        </div>
+        <div class="sign-page">
+            <form class="login-box forgotBuzPwd-box"  style="margin-top:0 !important;" id="register-box" onsubmit="return false">
+                <h1 class="sign-tit" data-i18n="Trade_back"></h1>
+                <div class="from-list">
+                    <h3 class="from-name">Email</h3>
+                    <!-- <i class="icon icon-user2"></i> -->
+                    <input type="text" id="account" class="from-ipt"  data-i18n="[placeholder]phone_email" tabindex="1" autofocus />
+                     <p class="box-tips style-p">
+                         <!-- <i class="icon icon-triangle"></i> -->
+                         <span data-i18n="content_empty"></span>
+                     </p>
+                </div>
+                <div class="from-list">
+                    <h3 class="from-name">validate passwarld</h3>
+                    <!-- <i class="icon icon-validate"></i> -->
+                    <input type="text" id="code" class="input-validate from-ipt" data-i18n="enter_code" tabindex="2" /><img src="" id="pic-captcha" data-i18n="[alt]refresh" />
+                    <p class="box-tips style-p">
+                        <i class="icon icon-triangle"></i>
+                        <span data-i18n="code_empty"></span>
+                    </p>
+                </div>
+                <div class="from-list">
+                    <div class="box-btn">
+                        <button type="button" class="btn-sign" id="btn-commit" data-i18n="submit"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/register.js"></script>
+</body>
+</html>

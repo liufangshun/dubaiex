@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="google_verify"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+</head>
+<style>
+    .bgf8{background-color: #f8f8f8}
+</style>
+    <body class="bgf8">
+       <div id="wrap" class="markets other-wrap my-detail">
+            <div class="sign-heads" style="height: 80px;background-color: #192748;">
+                @@include('./include/header.html')
+            </div>
+            <div id="content">
+                <div class="m-other">
+                    <div class="other-title"><span data-i18n="google_verify" class="tradTie"></span></div>
+                    <div class="other-body other-body2">
+                    <div class="bind-box">
+                        <div class="bind-tip" data-i18n="google_detail"></div>
+                        <div class="uploadctn">
+                                <div class="upload-appQR">
+                                    <img src="./imgs/settings-qr.png" alt="">
+                                </div>
+                                <ul class="install-app">
+                                    <li>
+                                        <ul>
+                                            <li>1.&nbsp;&nbsp;<span  data-i18n="iphone"></span>-----<span  data-i18n="search_app"></span></li>
+                                            <li><a href="https://itunes.apple.com/cn/app/google-authenticator/id388497605?mt=8" data-i18n="app_load" target="_blank"></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>2.&nbsp;&nbsp;<span  data-i18n="android"></span>-----<span  data-i18n="android_market"></span></li>
+                                            <li><a href="http://www.wandoujia.com/apps/com.google.android.apps.authenticator2" data-i18n="app_load" target="_blank"></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li>3.&nbsp;&nbsp;<span  data-i18n="ali_treasure"></span>-----<span  data-i18n="android_apple"></span></li>
+                                            <li><a href="http://otp.aliyun.com/shenfenbao.html" data-i18n="app_load" target="_blank"></a></li>
+                                        </ul>
+                                    </li>
+                                    <li style="color:#ff5640;">Scan the left qr code to get the Google verification code.</li>
+                                </ul>
+                                <!-- <p class="bind-tip" data-i18n="how_goo">?</p> -->
+                        </div>
+                       
+                        <form class="bind-form" onsubmit="return false">
+                            <!-- <p data-i18n="qr_code"></p> -->
+                            <div class="form-group">
+                                <label data-i18n="secret_key" class="ptb13"></label>
+                                <span class="secret-key ipt-setgugvail"  style="text-align: left;color: #009cff !important; font-size: 16px;"></span>
+                            </div>
+                            <div class="form-group hide">
+                                <label for="otp-captcha" data-i18n="pho_verify" style="position: relative; top: 15px;"></label>
+                                <input type="text" id="otp-captcha" class="ipt-setgugvail" data-i18n="[placeholder]enter_verify" tabindex="1" />
+                                <p class="send-code">
+                                    <button type="button" data-sign="addr-code" data-i18n="sms_code"></button>
+                                    <button type="button" data-sign="addr-voice" data-i18n="speech_code"></button>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label for="otp-code" data-i18n="verification"></label>
+                                <input type="text" id="otp-code" class="ipt-setgugvail" data-i18n="[placeholder]enter_goo" tabindex="2" />
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn" id="otp-btn" data-i18n="submit"></button>
+                            </div>
+                            <div id="qcode"></div>
+                        </form>
+                        
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            @@include('./include/footer.html')
+            <div id="mask">
+                <div class="mod-box mod2" id="mod-prompt">
+                    <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+                    <div class="mod-body tips-box">
+                    <p class="tips-txt"></p>
+                    <p class="tips-btn">
+                        <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+                    </p>
+                    </div>
+                </div>
+                <div class="mod-box mod2" id="mod-prompt2">
+                    <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+                    <div class="mod-body tips-box">
+                    <!-- <p class="tips-txt"><span data-i18n="goo_return"></span><a href="./toSafeSet.html" data-i18n="s_set"></a><span data-i18n="countdown"></span><span class="countdown">4</span><span>s</span></p> -->
+                    <p class="tips-txt"><span data-i18n="goo_return"></span></p>
+                    <p class="tips-btn">
+                        <a href="./toSafeSet.html" class="btn btn-default" data-i18n="certain"></a>
+                    </p>
+                    </div>
+                </div>
+                <div class="mod-box mod2" id="mod-bind">
+                    <div class="mod-title"><span data-i18n="bind_succeed"></span><i class="icon icon-close" data-action="close"></i></div>
+                    <div class="mod-body">
+                    <form class="mod-form" onsubmit="return false">
+                        <div class="form-group">
+                            <p class="bind-feedback" data-i18n="goo_succend"></p>
+                            <p class="bind-feedback" data-i18n="key_record"><span></span> </p>
+                            <p class="bind-feedback" data-i18n="if_deleted"></p>
+                        </div>
+                        <div class="form-group only-btn"><button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button></div>
+                    </form>
+                    </div>
+                </div>
+                <div class="mod-box mod1" id="mod-prompt3">
+                    <div class="mod-title"><span data-i18n="register_ok"></span></div>
+                    <div class="mod-body">
+                    <!-- <p data-i18n="return"><a href="./toSafeSet.html" data-i18n="safe_setting"></a></p> -->
+                    </div>
+                    <div class="mod-btn">
+                    <a href="/" class="btn" data-i18n="after_certi"></a>
+                    <a href="./toRealName.html" class="btn btn-default" data-i18n="certification"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/jquery.qrcode.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

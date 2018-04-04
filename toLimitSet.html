@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="price_set"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<style>
+    .bgf8{background-color: #f8f8f8}
+</style>
+<body class="bgf8">
+   <div id="wrap" class="markets other-wrap my-detail">
+      <div class="sign-heads">
+            @@include('./include/header.html')
+      </div>
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title"> 
+                <span data-i18n="price_set" class="tradTie"></span>
+                <span class="tip" data-i18n="feature_price" style="font-size:14px; padding-left: 15px; color: #999;"></span>
+            </div>
+            <div class="other-body other-body2">
+                <div class="pege-left">
+                    <ul id="accordion" class="accordion">
+                        <li>       
+                            <div class="link bgf1">
+                                <img src="./imgs/orders-1.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                <ul class="submenu" style="display: block;">                      
+                                    <li><a href="./trade-order.html">Open Orders</a></li>
+                                    <li><a href="./trade-orderHistory.html">Orders History</a></li>
+                                    <li><a href="./turnoverLog.html">Trade History</a></li>
+                                    <li><a href="./toLimitSet.html"  class="col90">Proce Protection</a></li>
+                                </ul>
+                            </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/setting.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                <ul class="submenu">
+                                    <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                    <li><a href="./toSafeSet.html">Security Settings</a></li>
+                                    <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                    <li><a href="./modify-buzPwd.html">Set Trading Password</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/my.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                <ul class="submenu" >
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Sunbmit a request</a></li>
+                                </ul>
+                        </li>
+                        </ul>
+                </div>
+                <div class="user-box">
+                    <div class="limitset-box" style="padding-left: 40px;">
+                        <ul class="set-notice">
+                          <li>
+                              <label><span class="other-validate-txt" data-i18n="price_set"></span></label>
+                              <div class="slide-box on" data-sign="6">
+                                <label>
+                                    <span class="slide-on">ON</span>
+                                    <span class="slide-btn"></span>
+                                    <span class="slide-off">OFF</span>
+                                </label>
+                              </div>
+                          </li>
+                        </ul>
+                        <form class="form-default">
+                          <div class="form-group">
+                              <label data-i18n="limit_scope"></label>
+                              <div class="box-input">
+                                <input type="text" data-i18n="[placeholder]limit_please" class="price">
+                                <span>%</span>
+                              </div>
+                              <!-- <button type="button" class="btn btn-default btn-submit" id="btn-limit" data-i18n="confirm_set"></button> -->
+                          </div>
+                          <div class="form-group">
+                              <button type="button" class="btn btn-default btn-submit" data-i18n="confirm_set" disabled></button>
+                          </div>  
+                        </form>
+                        <div class="limit">
+                          <div><span data-i18n="assume_set"></span></div>
+                          <ul>
+                              <li data-i18n="under_price"></li>
+                              <li data-i18n="up_bill"></li>
+                              <li data-i18n="low_price"></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-gug">
+            <div class="mod-title"><span data-i18n="remove_bind"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body">
+               <form class="mod-form">
+                  <div class="form-group hide">
+                     <label for="input-gug" data-i18n="verification"></label><input type="text" id="input-gug" data-i18n="[placeholder]enter_goo" />
+                     <p class="code-tab hide" data-type="phone"><span data-i18n="switch"></span><span data-i18n="phone_verify"></span></p>
+                  </div>
+                  <div class="form-group hide">
+                     <label for="input-phone" data-i18n="pho_verify"></label><input type="text" id="input-phone" data-i18n="[placeholder]enter_verify" />
+                     <p class="send-code"><button type="button" data-sign="msg" data-i18n="send_verify"></button></p>
+                     <p class="code-tab hide" data-type="gug"><span data-i18n="switch"></span data-i18n="Authenticator"><span></span></p>
+                  </div>
+                  <div class="form-group tc"><button type="button" class="btn btn-default unbind-btn" data-sign="gug" data-i18n="certain"></button></div>
+               </form>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-phone">
+            <div class="mod-title"><span data-i18n="lift_bound"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body">
+               <form class="mod-form">
+                  <div class="form-group">
+                     <label for="input-phone" data-i18n="pho_verify"></label><input type="text" id="input-phone" data-i18n="[placeholder]enter_verify" />
+                     <p class="send-code"><button type="button" data-sign="msg" data-i18n="send_verify"></button></p>
+                  </div>
+                  <div class="form-group tc"><button type="button" class="btn btn-default unbind-btn" data-sign="phone" data-i18n="certain"></button></div>
+               </form>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-email">
+            <div class="mod-title"><span data-i18n="unlock_mail"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body">
+               <form class="mod-form">
+                  <div class="form-group">
+                     <label for="input-phone" data-i18n="email_code"></label><input type="text" id="input-phone" data-i18n="[placeholder]email_verify" />
+                     <p class="send-code"><button type="button" data-sign="email" data-i18n="send_verify"></button></p>
+                  </div>
+                  <div class="form-group tc"><button type="button" class="btn btn-default unbind-btn" data-sign="email" data-i18n="certain"></button></div>
+               </form>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title" data-i18n="prompt"><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="safe_setting"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<style>
+        .bgf8{background-color: #f8f8f8}
+    </style>
+    <body class="bgf8">
+       <div id="wrap" class="markets other-wrap my-detail">
+          <div class="sign-heads">
+                @@include('./include/header.html')
+          </div>
+          <div id="content">
+                <div class="m-other">
+                    <div class="other-title"> 
+                        <span data-i18n="safe_setting" class="tradTie"></span>
+                    </div>
+                    <div class="other-body other-body2" >
+                        <div class="pege-left">
+                            <ul id="accordion" class="accordion">
+                                <li>       
+                                    <div class="link">
+                                        <img src="./imgs/orders.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                        <ul class="submenu">                      
+                                            <li><a href="./trade-order.html">Open Orders</a></li>
+                                            <li><a href="./trade-orderHistory.html">Orders History</a></li>
+                                            <li><a href="./turnoverLog.html">Trade History</a></li>
+                                            <li><a href="./toLimitSet.html">Proce Protection</a></li>
+                                        </ul>
+                                    </li>
+                                <li>
+                                    <div class="link bgf1">
+                                        <img src="./imgs/settings-1.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                        <ul class="submenu" style="display: block;">
+                                            <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                            <li><a href="./toSafeSet.html"  class="col90">Security Settings</a></li>
+                                            <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                            <li><a href="./modify-buzPwd.html">Set Trading Password</a></li>
+                                        </ul>
+                                </li>
+                                <li>
+                                    <div class="link">
+                                        <img src="./imgs/my.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                        <ul class="submenu" >
+                                        <li><a href="#">My Profile</a></li>
+                                        <li><a href="#">Sunbmit a request</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-box" style="position: relative;padding-bottom: 0 !important;">
+                            <div class="safeset-box">
+                                <div class="safeListdiv"  id="set-loginPwd"  style="margin-top: 20px;">
+                                    <div class="safeListdiv_tie">
+                                        <span data-i18n="login_pwd" class="color90"></span>
+                                    </div>
+                                    <div class="safeListdiv_ctn">
+                                        <div class="safeListdiv_ctn01">
+                                            <span data-i18n="h_set" class="colorfzff"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn02">
+                                            <span data-i18n="use_log"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn03">
+                                            <a href="./modify-loginPwd.html" data-i18n="modify"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="safeListdiv"  id="set-buzPwd" style="margin-top: 40px;">
+                                    <div class="safeListdiv_tie">
+                                        <span data-i18n="tra_pwd" class="colorff"></span>
+                                    </div>
+                                    <div class="safeListdiv_ctn">
+                                        <div class="safeListdiv_ctn01">
+                                            <span data-i18n="no_set" class="colorfz0b"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn02">
+                                            <span data-i18n="ensure_nomal"></span>
+                                            <span data-i18n="Transactions"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn03">
+                                            <a href="./modify-loginPwd.html" data-i18n="set"></a>
+                                            <a href="./modify-buzPwd.html" class="hide" data-i18n="modify"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="safeListdiv hide"  id="set-phone" style="margin-top: 40px;">
+                                    <div class="safeListdiv_tie">
+                                        <span data-i18n="bind_phone" class="color90"></span>
+                                    </div>
+                                    <div class="safeListdiv_ctn">
+                                        <div class="safeListdiv_ctn01">
+                                            <span data-i18n="not_bound"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn02">
+                                            <span data-i18n="for_safe"></span>
+                                            <span data-i18n="for_login"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn03">
+                                            <a href="./bind-phone.html" data-i18n="bind"></a>
+                                            <span class="hide" data-bind="phone" data-i18n="unbound"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="safeListdiv hide"  id="set-email" style="margin-top: 40px;">
+                                    <div class="safeListdiv_tie">
+                                        <span data-i18n="binding_mailbox" class="color90"></span>
+                                    </div>
+                                    <div class="safeListdiv_ctn">
+                                        <div class="safeListdiv_ctn01">
+                                            <span data-i18n="not_bound"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn02">
+                                            <span data-i18n="for_mailbox"></span>
+                                            <span data-i18n="for_login"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn03">
+                                            <a href="./bind-email.html" data-i18n="bind"></a>
+                                            <span class="hide" data-bind="email" data-i18n="unbound"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="safeListdiv"  id="set-gug" style="margin-top: 40px;">
+                                    <div class="safeListdiv_tie">
+                                        <span data-i18n="bind_google" class="color0b"></span>
+                                    </div>
+                                    <div class="safeListdiv_ctn">
+                                        <div class="safeListdiv_ctn01">
+                                            <span data-i18n="not_bound" class="colorfzff"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn02">
+                                            <span data-i18n="receive_msg"></span>
+                                            <span data-i18n="for_login"></span>
+                                        </div>
+                                        <div class="safeListdiv_ctn03">
+                                            <a href="./bind-gugValidate.html" data-i18n="bind"></a>
+                                            <span class="hide" data-bind="gug" data-i18n="unbound"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-gug">
+            <div class="mod-title">
+               <span data-i18n="remove_bind"></span>
+               <!-- <i class="icon icon-close" data-action="close"></i> -->
+            </div>   
+            <div class="mod-body">
+               <form class="mod-form" onsubmit="return false">
+                  <div class="form-group hide">
+                     <label for="input-gug" data-i18n="verification"></label><input type="text" id="input-gug" data-i18n="[placeholder]enter_goo" />
+                     <p class="code-tab hide" data-type="phone"><span data-i18n="switch"></span><span data-i18n="phone_verify"></span></p>
+                  </div>
+                  <div class="form-group hide">
+                     <label for="input-phone" data-i18n="pho_verify"></label><input type="text" id="input-phone" data-i18n="[placeholder]enter_verify" />
+                     <p class="send-code">
+                        <button type="button" data-sign="msg-gug" data-i18n="sms_code"></button>
+                        <button type="button" data-sign="addr-voice" data-i18n="speech_code"></button>
+                     </p>
+                     <p class="code-tab hide" data-type="gug"><span data-i18n="switch"></span><span data-i18n="Authenticator"></span></p>
+                  </div>
+                  <div class="form-group tc">
+                     <button type="button" class="btn btn-default" data-action="close" data-sign="gug" data-i18n="cancel"></button>
+                     <button type="button" class="btn btn-default unbind-btn" data-sign="gug" data-i18n="certain"></button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-phone">
+            <div class="mod-title"><span data-i18n="lift_bound"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body">
+               <form class="mod-form" onsubmit="return false">
+                  <div class="form-group">
+                     <label for="input-phone" data-i18n="pho_verify"></label><input type="text" id="input-phone" data-i18n="[placeholder]enter_verify" />
+                     <p class="send-code">
+                        <button type="button" data-sign="msg" data-i18n="sms_code"></button>
+                        <button type="button" data-sign="addr-voice" data-i18n="speech_code"></button>
+                     </p>
+                  </div>
+                  <div class="form-group tc"><button type="button" class="btn btn-default unbind-btn" data-sign="phone" data-i18n="certain"></button></div>
+               </form>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-email">
+            <div class="mod-title"><span data-i18n="unlock_mail"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body">
+               <form class="mod-form" onsubmit="return false">
+                  <div class="form-group">
+                     <label for="input-phone" data-i18n="email_code"></label><input type="text" id="input-phone" data-i18n="[placeholder]email_verify" />
+                     <p class="send-code"><button type="button" data-sign="email" data-i18n="send_verify"></button></p>
+                  </div>
+                  <div class="form-group tc"><button type="button" class="btn btn-default unbind-btn" data-sign="email" data-i18n="certain"></button></div>
+               </form>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="quotes_page"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/market.css" />
+   <link rel="stylesheet" href="./css/iconfont.css" />
+   <style> .bilist li{margin-top: 30px !important;}  
+
+
+   
+   
+   
+   
+   </style>
+
+
+
+
+</head>
+<body class="bgf8">
+   <div id="wrap" class="markets market">
+        <div class="sign-heads" style="height: 80px;background-color: #192748;">
+            @@include('./include/header.html')
+        </div>
+      <div id="content">
+     <!--     <ul class="ctt c01">
+            <li><img src="./imgs/icon-big-cny.png" data-i18n="[placeholder]currency" /><label><span class="coin-txt" data-i18n="deal_amount"></span><span class="coin-num cny-num"></span></label></li>
+            <li><img src="./imgs/icon-big-btc.png" data-i18n="[placeholder]currency" /><label><span class="coin-txt" data-i18n="bitcoin"></span><span class="coin-num btc-num"></span></label></li>
+            <li><img src="./imgs/icon-big-eth.png" data-i18n="[placeholder]currency" /><label><span class="coin-txt" data-i18n="ETH"></span><span class="coin-num eth-num"></span></label></li>
+         </ul> -->
+         <div class="ctt c02">
+            <ul class="ctt-tab tab-top5">
+                <li data-sign="0" class="active" ><span>ETH</span><span>TOP5</span></li>
+               <li data-sign="1"><span>TOP5</span><span>MBTC</span></li>
+               
+               <!-- <li><span>BTC</span><span>TOP5</span></li> -->
+               <!-- <li><span>ETH</span><span>TOP5</span></li> -->
+            </ul>
+            <div class="top5-box">
+               <ul class="show"></ul>
+               <ul></ul>
+               <!-- <ul></ul> -->
+            </div>
+         </div>
+         <div class="ctt c03">
+            <ul class="ctt-tab tab-currency bilist">
+               <li class="active">MBTC</li>
+               <li>ETH</li>
+               <li>BITCNY</li>
+               <li>USDT</li>
+              <!--  <li>BTC</li>
+               <li>NTC</li> -->
+            </ul>
+            <div class="search-input"><i class="icon icon-search"></i><input type="text" id="currency-search" data-i18n="[placeholder]screening" /></div>
+            <div class="currency-box">
+               <table class="table-currency market show">
+                  <thead>
+                     <tr>
+                        <th><i class="icon icon-star"></i></th>
+                        <th class="filter" data-sign="0" data-to="0"><span data-i18n="currency"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="1" data-to="0"><span data-i18n="latest_price"></span><i class="icon icon-filter"></i></th>
+                        <th data-i18n="ceiling_price"></th>
+                        <th data-i18n="lowest_price"></th>
+                        <th class="filter" data-sign="2" data-to="0"><span data-i18n="trading_volume"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="3" data-to="0"><span data-i18n="turnover"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="4" data-to="0"><span data-i18n="day_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="5" data-to="0"><span data-i18n="seven_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <!-- <th class="filter" data-sign="6" data-to="0"><span data-i18n="Money_on_time"></span><i class="icon icon-filter"></i></th> -->
+                     </tr>
+                  </thead>
+                  <tbody></tbody>
+               </table>
+               <table class="table-currency market">
+                  <thead>
+                     <tr>
+                        <th><i class="icon icon-star"></i></th>
+                        <th class="filter" data-sign="0" data-to="0"><span data-i18n="currency"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="1" data-to="0"><span data-i18n="latest_price"></span><i class="icon icon-filter"></i></th>
+                        <th data-i18n="ceiling_price"></th>
+                        <th data-i18n="lowest_price"></th>
+                        <th class="filter" data-sign="2" data-to="0"><span data-i18n="trading_volume"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="3" data-to="0"><span data-i18n="turnover"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="4" data-to="0"><span data-i18n="day_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="5" data-to="0"><span data-i18n="seven_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <!-- <th class="filter" data-sign="6" data-to="0"><span data-i18n="Money_on_time"></span><i class="icon icon-filter"></i></th> -->
+                     </tr>
+                  </thead>
+                  <tbody></tbody>
+               </table>
+               <table class="table-currency market">
+                  <thead>
+                     <tr>
+                        <th><i class="icon icon-star"></i></th>
+                        <th class="filter" data-sign="0" data-to="0"><span data-i18n="currency"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="1" data-to="0"><span data-i18n="latest_price"></span><i class="icon icon-filter"></i></th>
+                        <th data-i18n="ceiling_price"></th>
+                        <th data-i18n="lowest_price"></th>
+                        <th class="filter" data-sign="2" data-to="0"><span data-i18n="trading_volume"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="3" data-to="0"><span data-i18n="turnover"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="4" data-to="0"><span data-i18n="day_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="5" data-to="0"><span data-i18n="seven_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <!-- <th class="filter" data-sign="6" data-to="0"><span data-i18n="Money_on_time"></span><i class="icon icon-filter"></i></th> -->
+                     </tr>
+                  </thead>
+                  <tbody>
+                     
+                  </tbody>
+               </table>  
+               <table class="table-currency market">
+                  <thead>
+                     <tr>
+                        <th><i class="icon icon-star"></i></th>
+                        <th class="filter" data-sign="0" data-to="0"><span data-i18n="currency"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="1" data-to="0"><span data-i18n="latest_price"></span><i class="icon icon-filter"></i></th>
+                        <th data-i18n="ceiling_price"></th>
+                        <th data-i18n="lowest_price"></th>
+                        <th class="filter" data-sign="2" data-to="0"><span data-i18n="trading_volume"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="3" data-to="0"><span data-i18n="turnover"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="4" data-to="0"><span data-i18n="day_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <th class="filter" data-sign="5" data-to="0"><span data-i18n="seven_up_and_down"></span><i class="icon icon-filter"></i></th>
+                        <!-- <th class="filter" data-sign="6" data-to="0"><span data-i18n="Money_on_time"></span><i class="icon icon-filter"></i></th> -->
+                     </tr>
+                  </thead>
+                  <tbody>
+                     
+                  </tbody>
+               </table>
+               <div class="pagination-box">
+                  <ul class="pagination-list"></ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/Protobuffer/long.min.js"></script>
+   <script src="./js/Protobuffer/bytebuffer.min.js"></script>
+   <script src="./js/Protobuffer/protobuf.min.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/market.js"></script>
+</body>
+</html>

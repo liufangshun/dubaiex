@@ -1,0 +1,15 @@
+@red: #1EBCAA;
+@red-hover: #40ce8a;
+@blue: #1EBCAA;
+@blue-hover: #13E5CD;
+@green: #EB5F5F;
+@green2: #5cbe53;
+@green-hover: #ec3b42;
+@grey: #1f2222;
+@black: #181A1A;
+@bg: #282C2C;
+.width(@w:1200px){width: @w; margin: 0 auto;}
+.after(){content: ''; display: block; clear: both;}
+.bc(@r: 255,@b: 255,@g: 255,@a: .1){background-color: rgba(@r,@b,@g,@a);}
+.icon-bg(@x: 0,@y:0,@h,@w,@d: inline-block){background-position: @x @y; display: @d; height: @h; width: @w;}
+.btn-bg(@url:'../imgs/btn-android.png',@h: 42px,@w: 134px){background: url(@url) no-repeat; height: @h; width: @w;}

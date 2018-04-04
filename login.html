@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="login"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body class="bgf8">
+   <div id="bg-wrap" class="reg-log">
+       <div class="sign-heads">
+            @@include('./include/header.html')
+       </div>
+      <div class="sign-page">
+         <form class="login-box ls" id="login-box" style="margin-top:0 !important;">
+            <h1 class="sign-tit" data-i18n="login"></h1>
+            <div class="from-list">
+                <h3 class="from-name">Email</h3>
+               <!-- <i class="icon icon-user2"></i> -->
+               <input type="text" class="from-ipt" id="account" data-i18n="[placeholder]phone_email" tabindex="1" autofocus />
+                <p class="box-tips style-p">
+                   <!-- <i class="icon icon-triangle"></i> -->
+                   <span data-i18n="content_blank"></span>
+                </p>
+            </div>
+
+            <div class="from-list">
+                <h3 class="from-name">password</h3>
+               <!-- <i class="icon icon-lock2"></i> -->
+               <input type="password" id="pwd"  class="from-ipt" data-i18n="[placeholder]input_pwd" tabindex="2" />
+               <p class="box-tips style-p">
+                   <!-- <i class="icon icon-triangle"></i> -->
+                    <span data-i18n="password_null" ></span>
+               </p>
+            </div>
+            <!-- <div class="from-list" id="pic-code"> -->
+               <!-- <i class="icon icon-validate"></i> -->
+               <!-- <input type="text" class="input-validate" id="code" data-i18n="[placeholder]enter_code" tabindex="3" />
+               <img src="" id="pic-captcha" data-i18n="[alt]refresh" /> -->
+               <!-- <div class="box-tips style-p"><i class="icon icon-triangle"></i> -->
+                <!-- <span data-i18n="code_empty"></span></div> -->
+            <!-- </div> -->
+            <div class="from-list" style="width: 645px!important;">
+                <p class="box-error style-p" data-i18n="four_chances"></p>
+                <div class="box-checkbox">
+                    <label><input type="checkbox" id="remember" />
+                        <a class="bind_ip" style="margin-left:10px;"><span data-i18n="store_user" style="color: #666;font-size: 15px;"></span></a>
+                    </label>
+                    <p class="cont-tips style-p" data-i18n="bind_ip"></p>
+                </div>
+            </div>
+            <div class="from-list">
+                <div class="box-btn">
+                    <button type="button" class="btn-sign" id="btn-submit" data-i18n="login1"></button>
+                </div>
+                <!-- <ul class="sign-log">
+                    <li><a href="./r.html" data-i18n="free_regist"></a><span>&sdot;</span></li>
+                    <li><a href="./forgotPwd.html" style="color: #009cff" data-i18n="forgot"></a></li>
+                    <! <li><a href="./document-index.html" data-i18n="a_coin"></a></li> -->
+                <!-- </ul> --> 
+                <div class="sign-log">
+                    Sign up? 
+                    <a href="./forgotPwd.html" style="color: #009cff">Forgot Passworld</a>
+                </div>
+           </div>
+         </form>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/register.js"></script>
+</body>
+</html>

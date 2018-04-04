@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="pro_manager"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<body> 
+   <div id="wrap" class="markets other-wrap generalize">
+      @@include('./include/header.html')
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title general">
+               <span data-i18n="pro_manager"></span>
+               <span class="general" data-i18n="recommend"></span>
+            </div>
+            <div class="general-level">
+               <img src="./imgs/general.svg" alt="">
+            </div>
+            <div class="other-body other-body2 general">
+               <ul class="clearfix">
+                  <li>
+                     <p data-i18n="recommendation"></p>
+                     <div class="mothod">
+                        <form class="form-default">
+                           <div class="form-group">
+                              <label data-i18n="exclusive"></label>
+                              <div class="box-input">
+                                 <input type="text" class="price" id="text">
+                              </div>
+                              <button type="button" class="btn btn-default btn-submit" id="btn-address" data-i18n="copy_address"></button>
+                           </div>
+                        </form>
+                     </div>
+                     <div class="total">
+                        <span data-i18n="accumulate_commission"></span>
+                        <a href="./commission-list.html" data-i18n="check_detail"></a>
+                     </div>
+                     <div class="log-box">
+                        <table class="log-table">
+                           <thead>
+                              <tr>
+                                 <th data-i18n="currency"></th>
+                                 <th data-i18n="dividends"></th>
+                                 <th data-i18n="time_bonus"></th> 
+                              </tr>
+                           </thead>
+                           <tbody>
+                           </tbody>
+                        </table>
+                    <!--     <div class="pagination-box">
+                           <ul class="pagination-list"></ul>
+                        </div> -->
+                     </div>  
+                  </li>
+                  <li>
+                     <p data-i18n="invite_method"></p>
+                     <div class="mothod">
+                        <div id="qrcode">
+                        </div>
+                     </div>  
+                     <div class="total">
+                        <span data-i18n="cumulatived"></span><i class="total-items"></i><a href="./inviter-list.html" data-i18n="check_detail"></a> 
+                     </div>
+                     <div class="log-box">
+                        <table class="log-table">
+                           <thead>
+                              <tr>
+                                 <th data-i18n="inviter_account"></th>
+                                 <th data-i18n="registration"></th>
+                                 <!-- <th>分红截止时间</th> -->
+                              </tr>
+                           </thead>
+                           <tbody>
+                    
+                        </table>
+                 <!--        <div class="pagination-box">
+                           <ul class="pagination-list"></ul>
+                        </div> -->
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/jquery.qrcode.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

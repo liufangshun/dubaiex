@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>新币投票</title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<body>
+   <div id="wrap" class="markets other-wrap my-vote">
+      @@include('./include/header.html')
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title vote">
+               <span>新币投票第<span class="phase"></span>期</span>
+               <p>投票时间</p>
+               <p class="vote-data"></p>
+            </div>
+            <div class="other-body other-body2">
+               <div class="log-box">
+                  <table class="vote-table">
+                     <thead>
+                        <tr>
+                           <th>#</th>
+                           <th>项目LOGO</th>
+                           <th>项目名称</th>
+                           <th>得票数</th>
+                           <th>占比</th>
+                           <th></th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                       
+                     </tbody>
+                  </table>
+                  <div class="pagination-box">
+                     <ul class="pagination-list"></ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

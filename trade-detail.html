@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="tran_detail"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<style>
+    .bgf8{background-color: #f8f8f8}
+</style>
+<body class="bgf8">
+   <div id="wrap" class="markets other-wrap my-detail">
+        <div class="sign-heads" style="height: 80px;background-color: #192748;">
+            @@include('./include/header.html')
+        </div>
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title"><span data-i18n="tran_detail"></span></div>
+            <div class="other-body other-body2">
+                <div class="pege-left">
+                    <ul id="accordion" class="accordion">
+                        <li>       
+                            <div class="link">
+                                <img src="./imgs/orders.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                <ul class="submenu">                      
+                                    <li><a href="./trade-order.html">Open Orders</a></li>
+                                    <li><a href="./trade-orderHistory.html">Orders History</a></li>
+                                    <li><a href="./turnoverLog.html">Trade History</a></li>
+                                    <li><a href="./toLimitSet.html">Proce Protection</a></li>
+                                </ul>
+                            </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/setting.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                <ul class="submenu">
+                                    <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                    <li><a href="./toSafeSet.html">Security Settings</a></li>
+                                    <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                    <li><a href="./modify-buzPwd.html">Set Trading Password</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <div class="link bgf1">
+                                <img src="./imgs/my-1.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                <ul class="submenu" style="display: block;">
+                                <li><a href="#" class="col90">My Profile</a></li>
+                                <li><a href="#">Sunbmit a request</a></li>
+                                </ul>
+                        </li>
+                        </ul>
+                </div>
+               <div class="trade-buz-box">
+                  <table class="trade-buz-table">
+                     <thead>
+                        <tr>
+                           <th data-i18n="turn_time"></th>
+                           <th data-i18n="tran_value"></th>
+                           <th data-i18n="volume"></th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr class="green">
+                           <td>2017-01-02 13:12:32</td>
+                           <td><span class="turnover-price">54795608.75544458</span><i class="icon icon-down7"></i></td>
+                           <td>
+                              <span class="turnover-num">2.06</span>
+                              <span class="turnover-scale" style="width: 20px;"></span>
+                           </td>
+                        </tr>
+                        <tr class="balance">
+                           <td>2017-01-02 13:12:32</td>
+                           <td><span class="turnover-price">54795608.75544458</span></td>
+                           <td>
+                              <span class="turnover-num">3.98</span>
+                              <span class="turnover-scale" style="width: 39px;"></span>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>2017-01-02 13:12:32</td>
+                           <td><span class="turnover-price">54795608.75544458</span><i class="icon icon-up"></i></td>
+                           <td>
+                              <span class="turnover-num">5.98</span>
+                              <span class="turnover-scale" style="width: 59px;"></span>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <div class="pagination-box">
+                     <ul class="pagination-list"></ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

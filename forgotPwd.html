@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="login_password"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body class="bgf8">
+    <div id="bg-wrap" class="reg-log">
+        <div class="sign-heads">
+            @@include('./include/header.html')
+        </div>
+        <div class="w-box sign-page">
+            <form class="login-box commit-box" id="register-box" onSubmit="return false">   
+                <!-- <div class="box-title" data-i18n="login_password"></div> -->
+                <h1 class="sign-tit" data-i18n="login_password" style=" position: relative; right: 50px; margin-bottom: 50px;"></h1>
+                <div class="from-list">
+                    <h3 class="from-name">Email</h3>
+                    <!-- <i class="icon icon-user2"></i> -->
+                    <!-- class="certify-type"  -->
+                    <input type="text" class="from-ipt" id="account" data-i18n="[placeholder]phone_email" tabindex="1" autofocus />
+                    <p class="box-tips style-p">
+                        <!-- <i class="icon icon-triangle"></i> -->
+                        <span data-i18n="content_empty"></span>
+                    </p>
+                </div>
+
+                <div class="from-list hide">
+                    <h3 class="from-name">Email</h3>
+                    <!-- <i class="icon icon-user2"></i> -->
+                    <!-- class="certify-type"  -->
+                    <input type="text" class="from-ipt" id="card" data-i18n="[placeholder]id_card0" tabindex="2" autofocus />
+                    <p class="box-tips style-p">
+                        <!-- <i class="icon icon-triangle"></i> -->
+                        <span data-i18n="content_empty"></span>
+                    </p>
+                </div>
+
+                <div class="from-list">
+                    <h3 class="from-name">Verification Code</h3>
+                    <!-- <i class="icon icon-user2"></i> -->
+                    <!-- class="input-validate"-->
+                    <input type="text" class="from-ipt" id="code" data-i18n="[placeholder]enter_code" tabindex="3" autofocus />
+                    <img src="" style="cursor: pointer;" class="QD-num" data-i18n="refresh"  id="pic-captcha" />
+                    <!-- 验证码 -->
+                    <p class="box-tips style-p">
+                        <!-- <i class="icon icon-triangle"></i> -->
+                        <span data-i18n="code_empty"></span>
+                    </p>
+                </div>
+
+
+                <!-- 短信  ???????????-->
+                <div class="box-input msg-show hide">
+                    <!-- <i class="icon icon-bubble"></i> -->
+                    <input type="text" id="msg-code" class="input-validate" data-i18n="[placeholder]enter_verify" maxlength="6" tabindex="4"/>
+                    <button type="button" class="btn-msg msg btn-return" data-type="msg" data-i18n="sms_code"></button>
+                    <button type="button" class="btn-msg btn-return" data-type="voice" data-i18n="speech_code"></button>
+                    <div class="box-tips"><i class="icon icon-triangle"></i><span data-i18n="sms_verify"></span></div>
+                </div>
+
+
+
+
+                <!-- 电子邮箱 -->
+                <div class="from-list msg-show  hide">
+                    <h3 class="from-name">Email</h3>
+                     <!-- class="input-validate" -->
+                    <!-- <i class="icon icon-email"></i> -->
+                    <input type="text" class="from-ipt" id="email-code" data-i18n="[placeholder]email_verify" tabindex="6" autofocus />
+                    <button type="button" class="btn-msg btn-return aa" data-type="email" data-i18n="button"></button>
+                    <p class="box-tips style-p">
+                        <!-- <i class="icon icon-triangle"></i> -->
+                        <span data-i18n="sms_verify"></span>
+                    </p>
+                </div>
+
+
+
+
+                <!-- 谷歌安全验证码 -->
+                <div class="from-list hide">
+                    <h3 class="from-name">Google Authenticator</h3>
+                    <!-- <i class="icon icon-gug4"></i> -->
+
+                    <!-- class="certify-type"  -->
+                    <input type="text" class="from-ipt" id="google" data-i18n="[placeholder]enter_goo" tabindex="4" autofocus />
+                    <p class="box-tips style-p">
+                        <!-- <i class="icon icon-triangle"></i> -->
+                        <span data-i18n="content_empty"></span>
+                    </p>
+                </div>
+
+                <!-- 选择方式 -->
+                <div class="box-radio code-verity">
+                    <label class="hide"><input type="radio" name="code" value="1"><span data-i18n="phone_verify"></span></label>
+                    <label class="hide"><input type="radio" name="code" value="2"><span data-i18n="email_verify1"></span></label>
+                    <label class="hide"><input type="radio" name="code" value="3"><span data-i18n="Authenticator"></span></label>
+                </div>
+
+                <!-- 提交按钮 -->
+                <div class="from-list">
+                    <div class="box-btn">
+                        <button type="button" class="btn-sign" id="btn-commit" data-i18n="submit"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+   </div>
+
+
+
+   <div id="mask">
+      <div class="mod-box mod1" id="mod-tips">
+         <div class="mod-title"><i class="icon icon-smile"></i><span data-i18n="application"></span></div>
+         <div class="mod-body">
+            <p><span data-i18n="request"></span><a href="javascript:;" class="getLoginEmail" target="_blank" data-i18n="mailbox"></a><span data-i18n="password_set">,</span></p>
+         </div>
+         <div class="mod-btn">
+            <a href="javascript:;" class="btn btn-default" id="ok" data-i18n="certain"></a>
+         </div>
+      </div>
+      <div class="mod-box mod1" id="mod-error">
+         <div class="mod-title"><i class="icon icon-sad"></i><span data-i18n="password_failed"></span></div>
+         <div class="mod-body">
+            <p class="errorText"></p>
+         </div>
+         <div class="mod-btn">
+            <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/register.js"></script>
+</body>
+</html>

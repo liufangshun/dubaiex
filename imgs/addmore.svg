@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12264 1191 240 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-3 {
+        stroke: #d1d1d1;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 1.967px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_1919" data-name="Group 1919" transform="translate(-13631 323)">
+    <rect id="Rectangle_1136" data-name="Rectangle 1136" class="cls-1" width="240" height="160" rx="2" transform="translate(1367 868)"/>
+    <g id="Rectangle_1137" data-name="Rectangle 1137" class="cls-2" transform="translate(1387 908)">
+      <rect class="cls-4" width="200" height="120" rx="6"/>
+      <rect class="cls-5" x="0.5" y="0.5" width="199" height="119" rx="5.5"/>
+    </g>
+    <g id="Group_1846" data-name="Group 1846" transform="translate(1471 952)">
+      <line id="Line_93" data-name="Line 93" class="cls-3" y2="30" transform="translate(16 1)"/>
+      <line id="Line_94" data-name="Line 94" class="cls-3" x1="30" transform="translate(1 16)"/>
+    </g>
+  </g>
+</svg>

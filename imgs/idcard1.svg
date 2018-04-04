@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16281 1049 240 172">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-3 {
+        fill: #f2f2f2;
+      }
+
+      .cls-4 {
+        fill: #465374;
+        font-size: 14px;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+
+      .cls-5 {
+        fill: #2380fe;
+      }
+
+      .cls-6 {
+        font-size: 12px;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2005" data-name="Group 2005" transform="translate(-17297 63)">
+    <rect id="Rectangle_900" data-name="Rectangle 900" class="cls-1" width="240" height="160" rx="2" transform="translate(1016 986)"/>
+    <g id="Rectangle_908" data-name="Rectangle 908" class="cls-2" transform="translate(1036 1026)">
+      <rect class="cls-7" width="200" height="120" rx="6"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="199" height="119" rx="5.5"/>
+    </g>
+    <g id="Group_1859" data-name="Group 1859" transform="translate(15 412)">
+      <circle id="Ellipse_467" data-name="Ellipse 467" class="cls-3" cx="16.6" cy="16.6" r="16.6" transform="translate(1164.2 642.7)"/>
+      <path id="Path_582" data-name="Path 582" class="cls-3" d="M67,78.6a22.2,22.2,0,0,0-44.4,0,20.966,20.966,0,0,0,.6,5.1H66.4A20.966,20.966,0,0,0,67,78.6Z" transform="translate(1136 616)"/>
+      <rect id="Rectangle_901" data-name="Rectangle 901" class="cls-3" width="80.303" height="7" transform="translate(1039 651)"/>
+      <rect id="Rectangle_902" data-name="Rectangle 902" class="cls-3" width="64.303" height="7" transform="translate(1039 670)"/>
+      <rect id="Rectangle_903" data-name="Rectangle 903" class="cls-3" width="97.303" height="7" transform="translate(1039 689)"/>
+    </g>
+    <text id="个人证件正面照" class="cls-4" transform="translate(1087 1011)"><tspan x="0" y="0">个人证件正面照</tspan></text>
+    <g id="Group_1858" data-name="Group 1858" transform="translate(14 405)">
+      <path id="Path_576" data-name="Path 576" class="cls-5" d="M.773.5H80.227c.151,0,.273.356.273.8V25.7c0,.44-.122.8-.273.8H.773C.622,26.5.5,26.144.5,25.7V1.3C.5.856.622.5.773.5Z" transform="translate(1081.5 726.5)"/>
+      <text id="点击上传" class="cls-6" transform="translate(1098 745)"><tspan x="0" y="0">点击上传</tspan></text>
+    </g>
+  </g>
+</svg>

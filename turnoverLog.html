@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="t_records"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<style>
+    .bgf8{background-color: #f8f8f8} #listtile-tteyy1{ position: relative;right: 21px !important; width: 104.5% !important; }  #listtile-tteyy2{background-color: #f8f8f8 !important; height: 70px !important;}
+</style>
+<body class="bgf8">
+   <div id="wrap" class="other-wrap markets my-turnover">
+      <div class="sign-heads">
+            @@include('./include/header.html')
+      </div>
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title"> 
+                <span data-i18n="t_records" class="tradTie"></span>
+            </div>
+            <div class="turnover-title">
+                    <span data-i18n="trade_analysis"></span>
+                    <input type="text" id="market-search"  data-i18n="[placeholder]search" style="display:none;"/>
+                    <!-- <div class="dropdown-box box-right">
+                        <div class="dropdown-txt"><span>MBTC</span><i class="icon icon-down2"></i></div>
+                        <ul class="dropdown-list">
+                        <li class="on"><img src="./imgs/c-btc.png" data-i18n="[alt]icon"><span>MBTC</span></li>
+                        <li><img src="./imgs/c-etc.png" data-i18n="[alt]icon"><span>ETH</span></li>
+                        <li><img src="./imgs/c-bitcny.png" data-i18n="[alt]icon"><span>BITCNY</span></li>
+                        <li><img src="./imgs/c-usdt.png" data-i18n="[alt]icon"><span>USDT</span></li>
+                        </ul>
+                        <div class="search-box">
+                        <input type="text" id="market-search"  data-i18n="[placeholder]search" />
+                        <ul class="market-list">
+                            <li><i class="icon2 icon-etc"></i><span class="search-txt">ETC</span></li>
+                            <li><i class="icon2 icon-ae"></i><span class="search-txt">AE</span></li>
+                            <li><i class="icon2 icon-fldc"></i><span class="search-txt">FLDC</span></li>
+                            <li><i class="icon2 icon-vtc"></i><span class="search-txt">VTC</span></li>
+                            <li><i class="icon2 icon-eos"></i><span class="search-txt">EOS</span></li>
+                            <li><i class="icon2 icon-bts"></i><span class="search-txt">BTS</span></li>
+                            <li><i class="icon2 icon-eth"></i><span class="search-txt">ETH</span></li>
+                            <li><i class="icon2 icon-ardr"></i><span class="search-txt">ARDR</span></li>
+                        </ul>
+                        </div>
+                    </div> -->
+                </div>
+            <div class="other-body other-body2" style="min-height:1100px !important;">
+                <div class="pege-left">
+                    <ul id="accordion" class="accordion">
+                        <li>       
+                            <div class="link bgf1">
+                                <img src="./imgs/orders-1.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                <ul class="submenu" style="display: block;">                      
+                                    <li><a href="./trade-order.html">Open Orders</a></li>
+                                    <li><a href="./trade-orderHistory.html">Orders History</a></li>
+                                    <li><a href="./turnoverLog.html" class="col90">Trade History</a></li>
+                                    <li><a href="./toLimitSet.html">Proce Protection</a></li>
+                                </ul>
+                            </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/setting.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                <ul class="submenu">
+                                    <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                    <li><a href="./toSafeSet.html">Security Settings</a></li>
+                                    <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                    <li><a href="./modify-buzPwd.html">Set Trading Password</a></li>
+                                </ul>
+                        </li>
+                        <li>
+                            <div class="link">
+                                <img src="./imgs/my.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                <ul class="submenu" >
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Sunbmit a request</a></li>
+                                </ul>
+                        </li>
+                        </ul>
+                </div>
+                <div class="user-box">
+                    <div class="turnover-box">
+                        <div class="turnover-body">
+                            <div class="turnover-tip">
+                                <i class="icon icon-bulb"></i>
+                                <ul>
+                                <li><span data-i18n="data"></span><span data-i18n="estimate"></span></li>
+                                <li><span data-i18n="explained"></span><span data-i18n="reference"></span></li>
+                                </ul>
+                            </div>
+                            <div class="turnover-isNull"><i class="icon icon-warning"></i><span data-i18n="related_records"></span></div>
+                            <div class="turnover-table show">
+                                <ul class="table-bill">
+                                    <li>
+                                        <div class="bill-info">
+                                            <p class="p_after"><span data-i18n="average_buy"></span><label><span class="bidAvgPrice">--</span class="c-base"></label></p>
+                                            <p class="p_after"><span data-i18n="purchases"></span><label><span class="bidVolume">--</span class="c-target"></label></p>
+                                            <p><span data-i18n="purchase_amount"></span><label><span class="bidAmount">--</span class="c-base"></label></p>
+                                            <p class="p_after"><span data-i18n="Sell_price"></span><label><span class="askAvgPrice">--</span class="c-base"></label></p>
+                                            <p class="p_after"><span data-i18n="Total_sell"></span><label><span class="askVolume">--</span class="c-target"></label></p>
+                                            <p><span data-i18n="Sell_amount"></span><label><span class="askAmount">--</span class="c-base"></label></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bill-info">
+                                            <p class="p_after"><span data-i18n="position_estimate"></span><label><span class="heldAvgPrice">--</span class="c-base"></label></p>
+                                            <p class="p_after"><span data-i18n="current_position"></span><label><span class="heldVolume">--</span class="c-target"></label></p>
+                                            <p><span data-i18n="warehouse"></span><label><span class="heldAmount">--</span class="c-base"></label></p>
+                                            <p class="p_after"><span data-i18n="Market_price"></span><label><span class="marketPrice">--</span class="c-base"></label></p>
+                                            <p class="p_after"><span data-i18n="refer"></span><label><span class="marketAmount">--</span class="c-base"></label></p>
+                                            <p><span></span><label><span></span></label></p>
+                                            <div class="bill-info" style="color: #666;font-size: 14px;">
+                                                <p data-i18n="estimate" style="line-height: 20px;position: relative;color:#666; top: 15px;"> </p>
+                                                <p data-i18n="reference" style="line-height: 20px;position: relative;color:#666; top: 25px;"></p>
+                                            </p>       
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="trunmoberlog_ctn">
+                                <div class="bill-total">
+                                    <p>
+                                        <span data-i18n="float_profit"></span><span class="c-base2"></span>
+                                    </p>
+                                    <p class="trun-pctn boderte5">
+                                        <span class="floatProfit color_span">--</span>
+                                    </p>
+                                    <p class="trun-pctn">
+                                        <a>(MBTC)</a>
+                                        <span class="floatProfitRate color_span">--</span>
+                                    </p>
+                                </div>
+                                <div class="bill-total">
+                                    <p>
+                                        <span data-i18n="total_estimate"></span><span class="c-base2"></span>
+                                    </p>
+                                    <p class="trun-pctn boderte5">
+                                        <span class="totalProfit color_span">--</span>
+                                    </p>
+                                    <p class="trun-pctn">
+                                        <a>(MBTC)</a>
+                                        <span class="totalProfitRate color_span">--</span>
+                                    </p>
+                                </div>
+                                <div class="bill-total">
+                                    <p>
+                                        <span data-i18n="Historical"></span>
+                                        <span class="c-base2"></span>
+                                    </p>
+                                    <p class="trun-pctn boderte5">
+                                        <span class="historyProfit color_span">--<!-- +8235.55 --></span>
+                                    <p>
+                                    <p class="trun-pctn">
+                                        <a>(MBTC)</a>
+                                        <span class="historyProfitRate color_span">--<!-- +4.25% --></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="turnover-box turnover-list" id="listtile-tteyy1">
+                        <div class="turnover-title" id="listtile-tteyy2">
+                            <span data-i18n="t_records"></span>
+                            <!-- <div class="dropdown-box box-right">
+                                <div class="dropdown-txt"><span>CNY</span><i class="icon icon-down2"></i></div>
+                                <ul class="dropdown-list">
+                                <li><img src="./imgs/c-btc.png" alt="图标"><span>BTC</span></li>
+                                <li><img src="./imgs/c-cny.png" alt="图标"><span>CNY</span></li>
+                                <li><img src="./imgs/c-etc.png" alt="图标"><span>ETC</span></li>
+                                </ul>
+                                <div class="search-box">
+                                <input type="text" id="market-search2" />
+                                <ul></ul>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="turnover-body other-tables" style="background-color: white;padding: 20px !important;">
+                            <table class="table-order order-1th show">
+                            <thead>
+                                <tr>
+                                <th data-i18n="turn_time"></th>
+                                <th data-i18n="market"></th>
+                                <th data-i18n="type"></th>
+                                <th data-i18n="volume"></th>
+                                <th data-i18n="tran_value"></th>
+                                <th data-i18n="business"></th>
+                                <th data-i18n="commission1"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr class="red">
+                                <td>2017-01-02 13:12:32</td>
+                                <td><span>BTC</span>/<span>VTC</span></td>
+                                <td>买入</td>
+                                <td><span>82.21</span>/<span>12.00</span>(<span>VTC</span>)</td>
+                                <td><span>1.0031</span>(<span>BTC</span>)</td>
+                                <td><span>14.2</span>(<span>BTC</span>)</td>
+                                <td><span>0.01</span>(<span>BTC</span>)</td>
+                                </tr>
+                                <tr class="green">
+                                <td>2017-01-02 13:12:32</td>
+                                <td><span>BTC</span>/<span>ANS</span></td>
+                                <td>卖出</td>
+                                <td><span>62.21</span>/<span>12.00</span>(<span>ANS</span>)</td>
+                                <td><span>0.0031</span>(<span>BTC</span>)</td>
+                                <td><span>4.21</span>(<span>BTC</span>)</td>
+                                <td><span>0.38</span>(<span>BTC</span>)</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                    <!-- <div class="pagination-box">
+                        <ul class="pagination-list"></ul>
+                        <label class="turnover-log"><span data-i18n="check"></span><a href="./trade-order.html" class="my-order-link" data-i18n="my_order"></a></label>
+                    </div> -->
+                </div>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

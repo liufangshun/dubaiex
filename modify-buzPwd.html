@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="wodify_passd"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<style>
+      .bgf8{background-color: #f8f8f8}
+  </style>
+  <body class="bgf8">
+     <div id="wrap" class="markets other-wrap my-detail">
+        <div class="sign-heads">
+              @@include('./include/header.html')
+        </div>
+      <div id="content">
+            <div class="m-other">
+                  <div class="other-title"></i><span data-i18n=""></span></div>
+                  <div class="other-title"> 
+                        <span data-i18n="wodify_passd" class="tradTie"></span>
+                  </div>
+                  <div class="other-body other-body2">
+                        <div class="pege-left">
+                              <ul id="accordion" class="accordion">
+                                    <li>       
+                                          <div class="link bgf1">
+                                          <img src="./imgs/orders.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                          <ul class="submenu">                      
+                                                <li><a href="./trade-order.html">Open Orders</a></li>
+                                                <li><a href="./trade-orderHistory.html">Orders History</a></li>
+                                                <li><a href="./turnoverLog.html">Trade History</a></li>
+                                                <li><a href="./toLimitSet.html">Proce Protection</a></li>
+                                          </ul>
+                                          </li>
+                                    <li>
+                                          <div class="link">
+                                          <img src="./imgs/settings-1.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                          <ul class="submenu" style="display: block;">
+                                                <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                                <li><a href="./toSafeSet.html">Security Settings</a></li>
+                                                <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                                <li><a href="./modify-buzPwd.html"  class="col90">Set Trading Password</a></li>
+                                          </ul>
+                                    </li>
+                                    <li>
+                                          <div class="link">
+                                          <img src="./imgs/my.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                          <ul class="submenu" >
+                                          <li><a href="#">My Profile</a></li>
+                                          <li><a href="#">Sunbmit a request</a></li>
+                                          </ul>
+                                    </li>
+                              </ul>
+                        </div>
+                        <div class="user-box">
+                              <form class="form-default login-form" style="width:770px !important;">
+                                    <div class="form-group">
+                                          <label for="oldPwd" data-i18n="original_passd" class="listoldLaber" style="color: #636A69;font-size: 16px; text-align: right; font-weight: 500;   line-height: 40px;padding-right: 40px;width: 23%;float: left;"></label>
+                            
+                                          <div class="box-input">
+                                                <input type="password" id="oldPwd" data-i18n="[placeholder]orige_pwd" tabindex="1"/>
+                                                <p class="box-tips style-p">
+                                                      <span data-i18n="passd_empty"></span>
+                                                </p>
+                                                <a href="./resetBuzPwd.html" data-i18n="forget_passd"></a>
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                          <label for="newPwd" data-i18n="new_passd" style="color: #636A69;font-size: 16px; text-align: right; font-weight: 500;   line-height: 40px;padding-right: 40px;width: 23%;float: left;"></label>
+                                          <div class="box-input box-warn">
+                                                <input type="password" id="newPwd" data-i18n="[placeholder]new_pwd" tabindex="2" />
+                                                <p class="box-tips style-p">
+                                                      <span data-i18n="password_null"></span>
+                                                </p>
+                                          <!--       <p><i class="icon icon-warn"></i><span data-i18n="Registration"></span></p>
+                                                <ul>
+                                                <li class="active" data-i18n="disqualification"></li>
+                                                <li data-i18n="weak"></li>
+                                                <li data-i18n="centre"></li>
+                                                <li data-i18n="strong"></li>
+                                                </ul> -->
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                          <label for="rePwd" data-i18n="confirm_passd" style="color: #636A69;font-size: 16px; text-align: right; font-weight: 500;   line-height: 40px;padding-right: 40px;width: 23%;float: left;"></label>
+                                          <div class="box-input">
+                                                <input type="password" id="rePwd" data-i18n="[placeholder]cnew_pwd" tabindex="3" />
+                                                <p class="box-tips style-p">
+                                                      <span></span>
+                                                </p>
+                                          </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                          <label for="gug" data-i18n="Authenticator" style="color: #636A69;font-size: 16px; text-align: right; font-weight: 500;   line-height: 40px;padding-right: 40px;width: 23%;float: left;"></label>
+                                          <div class="box-input">
+                                                <input type="text" id="gug" data-i18n="[placeholder]enter_goo" tabindex="4" />
+                                                <p class="box-tips style-p">
+                                                      <span></span>
+                                                </p>
+                                          </div>
+                                    </div>
+                                    <div class="form-group">
+                                          <button type="button" class="modify-btn" data-type="buz" data-i18n="submit"></button>
+                                    </div>
+                              </form>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" id="btn-certain"  data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

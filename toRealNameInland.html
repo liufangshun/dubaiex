@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="real_name"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other1.css">
+</head>
+<body>
+   <div id="wrap" class="markets other-wrap my-realname2">
+      @@include('./include/header.html')
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title"><span data-i18n="real_name"></span></div>
+            <div class="other-tip" data-i18n=realtime_important></div>
+            <div class="other-body other-body2" style="border-top:none;">
+               <div class="examine_status hide"></div>
+               <div class="primary pass hide"><span data-i18n="pass_auth"></span><span class="verifyLevel"></span><span data-i18n="auth"></span></div>
+               <form class="realname-form" onsubmit="return false;">
+                  <!-- <div class="form-group">
+                     <label for="realname">手机号：</label>
+                     <div class="txt-info">
+                        <input type="text" id="realname" placeholder="请填您的手机号码" tabindex="1" /><span class="required">绑定</span>
+                     </div>
+                  </div>
+                  <p class="warn"><i class="icon icon-warn"></i>您还未绑定手机，请先绑定手机。</p> -->
+                  <div class="form-group hide">
+                     <label data-i18n="doc_area"></label>
+                     <div class="txt-info dropdown-box">
+                        <div class="dropdown-txt sel_area"><span class="default-txt" data-i18n="sel_area"></span><i class="icon icon-down2"></i></div>
+                        <ul class="dropdown-list area-list">
+                           <li data-value="+86"><a>+86 [<span>China</span>]</a></li>
+                           <li data-value="+001"><a>+001 [<span>United States</span>]</a></li>
+                           <li data-value="+44"><a>+44 [<span>United Kingdom</span>]</a></li>
+                           <li data-value="+61"><a>+61 [<span>Australia</span>]</a></li>
+                           <li data-value="+64"><a>+64 [<span>New Zealand</span>]</a></li>
+                           <li data-value="+1"><a>+1 [<span>Canada</span>]</a></li>
+                           <li data-value="+1242"><a>+1242 [<span>Bahamas</span>]</a></li>
+                           <li data-value="+1246"><a>+1246 [<span>Barbados</span>]</a></li>
+                           <li data-value="+1264"><a>+1264 [<span>Anguilla</span>]</a></li>
+                           <li data-value="+1268"><a>+1268 [<span>Antigua and Barbuda</span>]</a></li>
+                           <li data-value="+1284"><a>+1284 [<span>British Virgin Islands</span>]</a></li>
+                           <li data-value="+1340"><a>+1340 [<span>U.S. Virgin Islands</span>]</a></li>
+                           <li data-value="+1345"><a>+1345 [<span>Cayman Islands</span>]</a></li>
+                           <li data-value="+1441"><a>+1441 [<span>Bermuda</span>]</a></li>
+                           <li data-value="+1473"><a>+1473 [<span>Grenada</span>]</a></li>
+                           <li data-value="+1649"><a>+1649 [<span>Turks and Caicos Islands</span>]</a></li>
+                           <li data-value="+1664"><a>+1664 [<span>Montserrat</span>]</a></li>
+                           <li data-value="+1670"><a>+1670 [<span>Northern Mariana Islands</span>]</a></li>
+                           <li data-value="+1671"><a>+1671 [<span>Guam</span>]</a></li>
+                           <li data-value="+1684"><a>+1684 [<span>American Samoa</span>]</a></li>
+                           <li data-value="+1721"><a>+1721 [<span>Sint Maarten</span>]</a></li>
+                           <li data-value="+1758"><a>+1758 [<span>Saint Lucia</span>]</a></li>
+                           <li data-value="+1767"><a>+1767 [<span>Dominica</span>]</a></li>
+                           <li data-value="+1784"><a>+1784 [<span>Saint Vincent and the Grenadines</span>]</a></li>
+                           <li data-value="+1787"><a>+1787 [<span>Puerto Rico</span>]</a></li>
+                           <li data-value="+1809"><a>+1809 [<span>República Dominicana</span>]</a></li>
+                           <li data-value="+1868"><a>+1868 [<span>Trinidad and Tobago</span>]</a></li>
+                           <li data-value="+1869"><a>+1869 [<span>Saint Kitts and Nevis</span>]</a></li>
+                           <li data-value="+1876"><a>+1876 [<span>Jamaica</span>]</a></li>
+                           <li data-value="+20"><a>+20 [<span>‫مصر‬</span>]</a></li>
+                           <li data-value="+211"><a>+211 [<span>‫جنوب السودان‬</span>]</a></li>
+                           <li data-value="+212"><a>+212 [<span>‫المغرب‬</span>]</a></li>
+                           <li data-value="+213"><a>+213 [<span>‫الجزائر‬</span>]</a></li>
+                           <li data-value="+216"><a>+216 [<span>‫تونس‬</span>]</a></li>
+                           <li data-value="+218"><a>+218 [<span>‫ليبيا‬</span>]</a></li>
+                           <li data-value="+220"><a>+220 [<span>Gambia</span>]</a></li>
+                           <li data-value="+221"><a>+221 [<span>Sénégal</span>]</a></li>
+                           <li data-value="+222"><a>+222 [<span>‫موريتانيا‬</span>]</a></li>
+                           <li data-value="+223"><a>+223 [<span>Mali</span>]</a></li>
+                           <li data-value="+224"><a>+224 [<span>Guinée</span>]</a></li>
+                           <li data-value="+225"><a>+225 [<span>Côte d’Ivoire</span>]</a></li>
+                           <li data-value="+226"><a>+226 [<span>Burkina Faso</span>]</a></li>
+                           <li data-value="+227"><a>+227 [<span>Nijar</span>]</a></li>
+                           <li data-value="+228"><a>+228 [<span>Togo</span>]</a></li>
+                           <li data-value="+229"><a>+229 [<span>Bénin</span>]</a></li>
+                           <li data-value="+230"><a>+230 [<span>Moris</span>]</a></li>
+                           <li data-value="+231"><a>+231 [<span>Liberia</span>]</a></li>
+                           <li data-value="+232"><a>+232 [<span>Sierra Leone</span>]</a></li>
+                           <li data-value="+233"><a>+233 [<span>Gaana</span>]</a></li>
+                           <li data-value="+234"><a>+234 [<span>Nigeria</span>]</a></li>
+                           <li data-value="+235"><a>+235 [<span>Tchad</span>]</a></li>
+                           <li data-value="+236"><a>+236 [<span>République centrafricaine</span>]</a></li>
+                           <li data-value="+237"><a>+237 [<span>Cameroun</span>]</a></li>
+                           <li data-value="+238"><a>+238 [<span>Kabu Verdi</span>]</a></li>
+                           <li data-value="+239"><a>+239 [<span>São Tomé e Príncipe</span>]</a></li>
+                           <li data-value="+240"><a>+240 [<span>Guinea Ecuatorial</span>]</a></li>
+                           <li data-value="+241"><a>+241 [<span>Gabon</span>]</a></li>
+                           <li data-value="+242"><a>+242 [<span>Congo-Brazzaville</span>]</a></li>
+                           <li data-value="+243"><a>+243 [<span>Jamhuri ya Kidemokrasia ya Kongo</span>]</a></li>
+                           <li data-value="+244"><a>+244 [<span>Angola</span>]</a></li>
+                           <li data-value="+245"><a>+245 [<span>Guiné Bissau</span>]</a></li>
+                           <li data-value="+246"><a>+246 [<span>British Indian Ocean Territory</span>]</a></li>
+                           <li data-value="+247"><a>+247 [<span>Ascension Island</span>]</a></li>
+                           <li data-value="+248"><a>+248 [<span>Seychelles</span>]</a></li>
+                           <li data-value="+249"><a>+249 [<span>‫السودان‬</span>]</a></li>
+                           <li data-value="+250"><a>+250 [<span>Rwanda</span>]</a></li>
+                           <li data-value="+251"><a>+251 [<span>Ethiopia</span>]</a></li>
+                           <li data-value="+252"><a>+252 [<span>Soomaaliya</span>]</a></li>
+                           <li data-value="+253"><a>+253 [<span>Djibouti</span>]</a></li>
+                           <li data-value="+254"><a>+254 [<span>Kenya</span>]</a></li>
+                           <li data-value="+255"><a>+255 [<span>Tanzania</span>]</a></li>
+                           <li data-value="+256"><a>+256 [<span>Uganda</span>]</a></li>
+                           <li data-value="+257"><a>+257 [<span>Uburundi</span>]</a></li>
+                           <li data-value="+258"><a>+258 [<span>Moçambique</span>]</a></li>
+                           <li data-value="+260"><a>+260 [<span>Zambia</span>]</a></li>
+                           <li data-value="+261"><a>+261 [<span>Madagasikara</span>]</a></li>
+                           <li data-value="+262"><a>+262 [<span>Réunion</span>]</a></li>
+                           <li data-value="+263"><a>+263 [<span>Zimbabwe</span>]</a></li>
+                           <li data-value="+264"><a>+264 [<span>Namibia</span>]</a></li>
+                           <li data-value="+265"><a>+265 [<span>Malawi</span>]</a></li>
+                           <li data-value="+266"><a>+266 [<span>Lesotho</span>]</a></li>
+                           <li data-value="+267"><a>+267 [<span>Botswana</span>]</a></li>
+                           <li data-value="+268"><a>+268 [<span>Swaziland</span>]</a></li>
+                           <li data-value="+269"><a>+269 [<span>‫جزر القمر‬</span>]</a></li>
+                           <li data-value="+27"><a>+27 [<span>South Africa</span>]</a></li>
+                           <li data-value="+290"><a>+290 [<span>Saint Helena</span>]</a></li>
+                           <li data-value="+291"><a>+291 [<span>Eritrea</span>]</a></li>
+                           <li data-value="+297"><a>+297 [<span>Aruba</span>]</a></li>
+                           <li data-value="+298"><a>+298 [<span>Føroyar</span>]</a></li>
+                           <li data-value="+299"><a>+299 [<span>Kalaallit Nunaat</span>]</a></li>
+                           <li data-value="+30"><a>+30 [<span>Ελλάδα</span>]</a></li>
+                           <li data-value="+31"><a>+31 [<span>Nederland</span>]</a></li>
+                           <li data-value="+32"><a>+32 [<span>België</span>]</a></li>
+                           <li data-value="+33"><a>+33 [<span>France</span>]</a></li>
+                           <li data-value="+34"><a>+34 [<span>España</span>]</a></li>
+                           <li data-value="+350"><a>+350 [<span>Gibraltar</span>]</a></li>
+                           <li data-value="+351"><a>+351 [<span>Portugal</span>]</a></li>
+                           <li data-value="+352"><a>+352 [<span>Luxembourg</span>]</a></li>
+                           <li data-value="+353"><a>+353 [<span>Ireland</span>]</a></li>
+                           <li data-value="+354"><a>+354 [<span>Ísland</span>]</a></li>
+                           <li data-value="+355"><a>+355 [<span>Shqipëria</span>]</a></li>
+                           <li data-value="+356"><a>+356 [<span>Malta</span>]</a></li>
+                           <li data-value="+357"><a>+357 [<span>Κύπρος</span>]</a></li>
+                           <li data-value="+358"><a>+358 [<span>Suomi</span>]</a></li>
+                           <li data-value="+359"><a>+359 [<span>България</span>]</a></li>
+                           <li data-value="+36"><a>+36 [<span>Magyarország</span>]</a></li>
+                           <li data-value="+370"><a>+370 [<span>Lietuva</span>]</a></li>
+                           <li data-value="+371"><a>+371 [<span>Latvija</span>]</a></li>
+                           <li data-value="+372"><a>+372 [<span>Eesti</span>]</a></li>
+                           <li data-value="+373"><a>+373 [<span>Republica Moldova</span>]</a></li>
+                           <li data-value="+374"><a>+374 [<span>Հայաստան</span>]</a></li>
+                           <li data-value="+375"><a>+375 [<span>Беларусь</span>]</a></li>
+                           <li data-value="+376"><a>+376 [<span>Andorra</span>]</a></li>
+                           <li data-value="+377"><a>+377 [<span>Monaco</span>]</a></li>
+                           <li data-value="+378"><a>+378 [<span>San Marino</span>]</a></li>
+                           <li data-value="+379"><a>+379 [<span>Città del Vaticano</span>]</a></li>
+                           <li data-value="+380"><a>+380 [<span>Україна</span>]</a></li>
+                           <li data-value="+381"><a>+381 [<span>Србија</span>]</a></li>
+                           <li data-value="+382"><a>+382 [<span>Crna Gora</span>]</a></li>
+                           <li data-value="+385"><a>+385 [<span>Hrvatska</span>]</a></li>
+                           <li data-value="+386"><a>+386 [<span>Slovenija</span>]</a></li>
+                           <li data-value="+387"><a>+387 [<span>Босна и Херцеговина</span>]</a></li>
+                           <li data-value="+389"><a>+389 [<span>Македонија</span>]</a></li>
+                           <li data-value="+39"><a>+39 [<span>Italia</span>]</a></li>
+                           <li data-value="+40"><a>+40 [<span>România</span>]</a></li>
+                           <li data-value="+41"><a>+41 [<span>Schweiz</span>]</a></li>
+                           <li data-value="+420"><a>+420 [<span>Česká republika</span>]</a></li>
+                           <li data-value="+421"><a>+421 [<span>Slovensko</span>]</a></li>
+                           <li data-value="+423"><a>+423 [<span>Liechtenstein</span>]</a></li>
+                           <li data-value="+43"><a>+43 [<span>Österreich</span>]</a></li>
+                           <li data-value="+45"><a>+45 [<span>Danmark</span>]</a></li>
+                           <li data-value="+46"><a>+46 [<span>Sverige</span>]</a></li>
+                           <li data-value="+47"><a>+47 [<span>Norge</span>]</a></li>
+                           <li data-value="+48"><a>+48 [<span>Polska</span>]</a></li>
+                           <li data-value="+49"><a>+49 [<span>Deutschland</span>]</a></li>
+                           <li data-value="+500"><a>+500 [<span>Falkland Islands [Islas Malvinas]</span>]</a></li>
+                           <li data-value="+501"><a>+501 [<span>Belize</span>]</a></li>
+                           <li data-value="+502"><a>+502 [<span>Guatemala</span>]</a></li>
+                           <li data-value="+503"><a>+503 [<span>El Salvador</span>]</a></li>
+                           <li data-value="+504"><a>+504 [<span>Honduras</span>]</a></li>
+                           <li data-value="+505"><a>+505 [<span>Nicaragua</span>]</a></li>
+                           <li data-value="+506"><a>+506 [<span>Costa Rica</span>]</a></li>
+                           <li data-value="+507"><a>+507 [<span>Panamá</span>]</a></li>
+                           <li data-value="+508"><a>+508 [<span>Saint-Pierre-et-Miquelon</span>]</a></li>
+                           <li data-value="+509"><a>+509 [<span>Haiti</span>]</a></li>
+                           <li data-value="+51"><a>+51 [<span>Perú</span>]</a></li>
+                           <li data-value="+52"><a>+52 [<span>México</span>]</a></li>
+                           <li data-value="+53"><a>+53 [<span>Cuba</span>]</a></li>
+                           <li data-value="+54"><a>+54 [<span>Argentina</span>]</a></li>
+                           <li data-value="+55"><a>+55 [<span>Brasil</span>]</a></li>
+                           <li data-value="+56"><a>+56 [<span>Chile</span>]</a></li>
+                           <li data-value="+57"><a>+57 [<span>Colombia</span>]</a></li>
+                           <li data-value="+58"><a>+58 [<span>Venezuela</span>]</a></li>
+                           <li data-value="+590"><a>+590 [<span>Saint-Barthélémy</span>]</a></li>
+                           <li data-value="+590"><a>+590 [<span>Saint-Martin [partie française]</span>]</a></li>
+                           <li data-value="+590"><a>+590 [<span>Guadeloupe</span>]</a></li>
+                           <li data-value="+591"><a>+591 [<span>Bolivia</span>]</a></li>
+                           <li data-value="+592"><a>+592 [<span>Guyana</span>]</a></li>
+                           <li data-value="+593"><a>+593 [<span>Ecuador</span>]</a></li>
+                           <li data-value="+594"><a>+594 [<span>Guyane française</span>]</a></li>
+                           <li data-value="+595"><a>+595 [<span>Paraguay</span>]</a></li>
+                           <li data-value="+596"><a>+596 [<span>Martinique</span>]</a></li>
+                           <li data-value="+597"><a>+597 [<span>Suriname</span>]</a></li>
+                           <li data-value="+598"><a>+598 [<span>Uruguay</span>]</a></li>
+                           <li data-value="+599"><a>+599 [<span>Caribbean Netherlands</span>]</a></li>
+                           <li data-value="+599"><a>+599 [<span>Curaçao</span>]</a></li>
+                           <li data-value="+60"><a>+60 [<span>Malaysia</span>]</a></li>
+                           <li data-value="+62"><a>+62 [<span>Indonesia</span>]</a></li>
+                           <li data-value="+63"><a>+63 [<span>Philippines</span>]</a></li>
+                           <li data-value="+65"><a>+65 [<span>Singapore</span>]</a></li>
+                           <li data-value="+66"><a>+66 [<span>ไทย</span>]</a></li>
+                           <li data-value="+670"><a>+670 [<span>Timor-Leste</span>]</a></li>
+                           <li data-value="+6723"><a>+6723 [<span>Norfolk Island</span>]</a></li>
+                           <li data-value="+673"><a>+673 [<span>Brunei</span>]</a></li>
+                           <li data-value="+674"><a>+674 [<span>Nauru</span>]</a></li>
+                           <li data-value="+675"><a>+675 [<span>Papua New Guinea</span>]</a></li>
+                           <li data-value="+676"><a>+676 [<span>Tonga</span>]</a></li>
+                           <li data-value="+677"><a>+677 [<span>Solomon Islands</span>]</a></li>
+                           <li data-value="+678"><a>+678 [<span>Vanuatu</span>]</a></li>
+                           <li data-value="+679"><a>+679 [<span>Fiji</span>]</a></li>
+                           <li data-value="+680"><a>+680 [<span>Palau</span>]</a></li>
+                           <li data-value="+681"><a>+681 [<span>Wallis and Futuna</span>]</a></li>
+                           <li data-value="+682"><a>+682 [<span>Cook Islands</span>]</a></li>
+                           <li data-value="+683"><a>+683 [<span>Niue</span>]</a></li>
+                           <li data-value="+685"><a>+685 [<span>Samoa</span>]</a></li>
+                           <li data-value="+686"><a>+686 [<span>Kiribati</span>]</a></li>
+                           <li data-value="+687"><a>+687 [<span>Nouvelle-Calédonie</span>]</a></li>
+                           <li data-value="+688"><a>+688 [<span>Tuvalu</span>]</a></li>
+                           <li data-value="+689"><a>+689 [<span>Polynésie française</span>]</a></li>
+                           <li data-value="+690"><a>+690 [<span>Tokelau</span>]</a></li>
+                           <li data-value="+691"><a>+691 [<span>Micronesia</span>]</a></li>
+                           <li data-value="+692"><a>+692 [<span>Marshall Islands</span>]</a></li>
+                           <li data-value="+7"><a>+7 [<span>Россия</span>]</a></li>
+                           <li data-value="+7"><a>+7 [<span>Казахстан</span>]</a></li>
+                           <li data-value="+81"><a>+81 [<span>にほん</span>]</a></li>
+                           <li data-value="+82"><a>+82 [<span>대한민국</span>]</a></li>
+                           <li data-value="+84"><a>+84 [<span>Việt Nam</span>]</a></li>
+                           <li data-value="+850"><a>+850 [<span>조선 민주주의 인민 공화국</span>]</a></li>
+                           <li data-value="+852"><a>+852 [<span>香港</span>]</a></li>
+                           <li data-value="+853"><a>+853 [<span>澳門</span>]</a></li>
+                           <li data-value="+855"><a>+855 [<span>កម្ពុជា</span>]</a></li>
+                           <li data-value="+856"><a>+856 [<span>ສ.ປ.ປ ລາວ</span>]</a></li>
+                           <li data-value="+880"><a>+880 [<span>বাংলাদেশ</span>]</a></li>
+                           <li data-value="+886"><a>+886 [<span>台灣</span>]</a></li>
+                           <li data-value="+90"><a>+90 [<span>Türkiye</span>]</a></li>
+                           <li data-value="+91"><a>+91 [<span>भारत</span>]</a></li>
+                           <li data-value="+92"><a>+92 [<span>‫پاکستان‬</span>]</a></li>
+                           <li data-value="+93"><a>+93 [<span>‫افغانستان‬</span>]</a></li>
+                           <li data-value="+94"><a>+94 [<span>ශ්‍රී ලංකාව</span>]</a></li>
+                           <li data-value="+95"><a>+95 [<span>မြန်မာ</span>]</a></li>
+                           <li data-value="+960"><a>+960 [<span>Maldives</span>]</a></li>
+                           <li data-value="+961"><a>+961 [<span>‫لبنان‬</span>]</a></li>
+                           <li data-value="+962"><a>+962 [<span>‫الأردن‬</span>]</a></li>
+                           <li data-value="+963"><a>+963 [<span>‫سوريا‬</span>]</a></li>
+                           <li data-value="+964"><a>+964 [<span>‫العراق‬</span>]</a></li>
+                           <li data-value="+965"><a>+965 [<span>‫الكويت‬</span>]</a></li>
+                           <li data-value="+966"><a>+966 [<span>‫المملكة العربية السعودية‬</span>]</a></li>
+                           <li data-value="+967"><a>+967 [<span>‫اليمن‬</span>]</a></li>
+                           <li data-value="+968"><a>+968 [<span>‫عُمان‬</span>]</a></li>
+                           <li data-value="+970"><a>+970 [[<span>‫فلسطين‬</span>]</a></li>
+                           <li data-value="+971"><a>+971 [<span>‫الإمارات العربية المتحدة‬</span>]</a></li>
+                           <li data-value="+972"><a>+972 [<span>‫ישראל‬</span>]</a></li>
+                           <li data-value="+973"><a>+973 [<span>‫البحرين‬</span>]</a></li>
+                           <li data-value="+974"><a>+974 [<span>‫قطر‬</span>]</a></li>
+                           <li data-value="+975"><a>+975 [<span>འབྲུག</span>]</a></li>
+                           <li data-value="+976"><a>+976 [<span>Монгол</span>]</a></li>
+                           <li data-value="+977"><a>+977 [<span>नेपाल</span>]</a></li>
+                           <li data-value="+98"><a>+98 [<span>‫ایران‬</span>]</a></li>
+                           <li data-value="+992"><a>+992 [<span>Tajikistan</span>]</a></li>
+                           <li data-value="+993"><a>+993 [<span>Turkmenistan</span>]</a></li>
+                           <li data-value="+994"><a>+994 [<span>Azərbaycan</span>]</a></li>
+                           <li data-value="+995"><a>+995 [<span>საქართველო</span>]</a></li>
+                           <li data-value="+996"><a>+996 [<span>Kyrgyzstan</span>]</a></li>
+                           <li data-value="+998"><a>+998 [<span>Ўзбекистон</span>]</a></li>
+                        </ul>
+                        <!-- <p class="txt-tip warn hide"><span data-i18n="certificate_area"></span><span data-i18n="cannot_empty"></span></p> -->
+                        <!-- <span class="required">必填</span> -->
+                     </div>
+                     <div class="txt-info area hide">
+                        <input type="text" data-i18n="[placeholder]realname" tabindex="2" />
+                     </div>
+                  </div>
+                  <div class="form-group hide">
+                     <label for="realname" data-i18n="name"></label>
+                     <div class="txt-info realname">
+                        <input type="text" id="surname" data-i18n="[placeholder]surname" tabindex="2" />
+                        <input type="text" id="forename" data-i18n="[placeholder]first_name" tabindex="2" />
+                        <!-- <span class="required">必填</span> -->
+                        <!-- <p class="txt-tip warn hide"><span data-i18n="realname2"></span><span data-i18n="cannot_empty"></span></p> -->
+                        <!-- <p class="txt-tip tips"><span data-i18n="realtime_important"></span></p> -->
+                     </div>
+                     <div class="txt-info name hide">
+                        <input type="text">
+                     </div>
+                  </div>
+                  <div class="form-group hide">
+                     <span></span>
+                     <span data-i18n="residential"></span>
+                     <span></span>
+                  </div>
+               <!--    <div class="form-group hide">
+                     <label for="address">国家</label>
+                     <div class="txt-info">
+                        <input type="text" id="country" placeholder="请输入国家" tabindex="3" />
+                     </div>
+                  </div> -->
+                  <div class="form-group hide">
+                     <label for="address" data-i18n="city1"></label>
+                     <div class="txt-info">
+                        <input type="text" id="province" data-i18n="[placeholder]state_pro" tabindex="4" />
+                        <input type="text" id="city" data-i18n="[placeholder]city3" tabindex="5" />
+                     </div>
+                  </div>
+                  <div class="form-group hide">
+                     <label for="address" data-i18n="address1"></label>
+                     <div class="txt-info">
+                        <input type="text" id="address" data-i18n="[placeholder]detail_add" tabindex="6" />
+                     </div>
+                  </div>
+                  <div class="form-group hide">
+                     <label for="postcode" data-i18n="postcode"></label>
+                     <div class="txt-info">
+                        <input type="text" id="postcode" data-i18n="[placeholder]enter_postal" tabindex="7" />
+                     </div>
+                  </div>  
+                  <div class="form-group hide">
+                     <span></span>
+                     <span data-i18n="Credentials"></span>
+                     <span></span>
+                  </div>
+              <!--     <div class="form-group hide">
+                     <label>证件类型</label>
+                     <div class="txt-info">
+                        <ul class="clearfix">
+                           <li id="sfz">身份证</li>
+                           <li id="hz">护照</li>
+                        </ul>
+                     </div>
+                  </div> -->
+                  <div class="form-group hide">
+                     <label for="certificate-num" data-i18n="id_card"></label>
+                     <div class="txt-info">
+                        <input type="text" id="certificate-num" data-i18n="[placeholder]id_number" tabindex="8" />
+                        <!-- <span class="required">必填</span> -->
+                        <!-- <p class="txt-tip warn hide"><span data-i18n="id_card2"></span><span data-i18n="cannot_empty"></span></p> -->
+                     </div>
+                  </div>
+                  <div class="form-group hide">
+                     <label data-i18n="date_day"></label>
+                     <div align="center" class="txt-info">
+                        <select name="year">
+                        </select>
+                        <select name="month">
+                        </select>
+                        <select name="day">
+                        </select>
+                    </div>   
+                  </div>
+                 <!--  <div class="upload-box hide">
+                     <ul class="upload-pic">
+                        <li>
+                           <label for="upload-name"><span data-i18n="Upload_face"></span></label>
+                           <img src="./imgs/idcard11.png" alt="">
+                        </li>
+                        <li>
+                           <label for="upload-name"><span data-i18n="upload_back"></span></label>
+                           <img src="./imgs/idcard22.png" alt="">
+                        </li>
+                     </ul>
+                  </div> -->
+                  <div class="form-group hide">
+                     <label data-i18n="o_bank"></label>
+                     <div class="txt-info dropdown-box">
+                        <label class="dropdown-txt bank-type"><span class="open-account"><span data-i18n="Choose_bank"></span></span><i class="icon icon-down2"></i></label>
+                        <ul class="dropdown-list bank-list"></ul>
+                        <p class="txt-tip warn hide"><span data-i18n="o_bank"></span><span data-i18n="cannot_empty"></span></p>
+                     </div>
+                     <div class="txt-info bank hide">
+                        <input type="text" data-i18n="[placeholder]realname" tabindex="2" />
+                     </div>
+                  </div>
+                  <div class="form-group hide">
+                     <label for="bank-num" data-i18n="card_no"></label>
+                     <div class="txt-info">
+                        <input type="text" id="bank-num" data-i18n="[placeholder]bank_num2" tabindex="9" />
+                        <p class="txt-tip tips"><span data-i18n="realtime_important2"></span></p>
+                     </div>
+                  </div>
+                <!--   <div class="upload-box hide">
+                     <ul class="upload-pic bankcard">
+                           <li>
+                              <label for="upload-name"><span data-i18n="Upload_face"></span></label>
+                           </li>
+                           <li>
+                              <label for="upload-name"><span data-i18n="upload_back"></span></label>
+                           </li>
+                     </ul>
+                  </div> -->
+                  <div class="upload-box hide">
+                     <button type="button" class="btn btn-default" id="submit-info">
+                        <span data-i18n="sub_infor"></span>
+                     </button>
+                  </div>
+                <!--   <ul class="realname-explain hide">
+                     <p><span>说明：</span></p>
+                     <p>1、证件必须是清晰彩色原件电子版，证件上文字清晰可见，可以是扫描件或者数码拍摄照片。</p>
+                     <p>2、请上传后缀名为jpg、jpeg、png的照片，每张照片最大不能超过5M。</p>
+                     <p>3、认证申请会在48小时内完成审核，节假日审核会有延迟，请您耐心等待审核结果。</p>
+                  </ul> -->
+               </form>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+      <div id="mask">
+         <div class="mod-box mod2" id="mod-prompt">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-prompt2">
+            <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <p class="tips-txt"></p>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+               </p>
+            </div>
+         </div>
+         <div class="mod-box mod2" id="mod-prompt3">
+            <div class="mod-title"><span data-i18n="real_name"></span><i class="icon icon-close" data-action="close"></i></div>
+            <div class="mod-body tips-box">
+               <div class="tip" data-i18n="submission"></div>
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="doc_area"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-area" disabled/>
+                  </div>
+               </div>  
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="name"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-name" disabled />
+                  </div>
+               </div>
+               <div class="form-group hide">
+                  <label for="address" data-i18n="city1"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-city" disabled />
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="residential"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-address" disabled />
+                  </div>
+               </div>  
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="postcode"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-postcode" disabled />
+                  </div>
+               </div>  
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="id_card"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-card" disabled />
+                  </div>
+               </div> 
+               <div class="form-group hide">
+                  <label for="address" data-i18n="date_day"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-birthday" disabled />
+                  </div>
+               </div>     
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="open_bank"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-bank" disabled />
+                  </div>
+               </div>   
+               <div class="form-group">
+                  <label for="bank-num" data-i18n="card_no"></label>
+                  <div class="txt-info">
+                     <input type="text" id="mod-num" disabled />
+                  </div>
+               </div>
+               <p class="tips-btn">
+                  <button type="button" class="btn btn-default" data-action="close" data-i18n="return_change"></button>
+                  <button type="button" class="btn btn-default" id='btn-certify' data-i18n="submit1"></button>
+               </p>
+            </div>
+         </div>
+         <div class="mod-box mod2 loading" id="mod-prompt4">
+            <img src="./imgs/loading.gif" alt="">
+            <span data-i18n="loading"></span>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/jquery.form.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="register"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/login.css">
+  <style>
+     .header-ri{color:white !important;}
+      .header-logo{color: #0074bd !important;}
+  </style>        
+</head>
+<body class="bgf8">
+    <div id="bg-wrap" class="reg-log">
+      <div class="sign-heads">
+          @@include('./include/header.html')
+      </div>
+      <div class="sign-page">
+         <form class="login-box my-register close-register" id="register-box" style="margin-top:0 !important;">
+            <h1 class="sign-tit" data-i18n="register1"></h1>
+            <div class="from-list r1 hide">
+               <h3 class="from-name"  data-i18n="email"></h3>
+                <!-- <i class="icon icon-user2"></i> -->
+               <input type="text" id="account"  class="from-ipt" data-i18n="[placeholder]input_all" tabindex="1" />
+               <div class="btn-dropdown">
+                  <button type="button"><span class="dropdown-num">+86</span><i></i></button>
+               </div>
+               <p class="box-tips style-p">
+                   <!-- <i class="icon icon-triangle"></i> -->
+                   <span data-i18n="empty"></span>
+                </p>
+            </div>
+
+            <div class="from-list r2">
+                <h3 class="from-name"  data-i18n="email">Email</h3>
+               <!-- <i class="icon icon-email"></i> -->
+               <input type="text" id="email"  class="from-ipt"  data-i18n="[placeholder]email" tabindex="1" />
+               <p class="box-tips style-p">
+                  <i class="icon icon-triangle"></i>
+                  <span data-i18n="empty"></span>
+               </p>
+            </div>
+
+            <div class="from-list">
+                <h3 class="from-name"  data-i18n="set_register">Password</h3>
+               <!-- <i class="icon icon-lock2"></i> -->
+               <input type="password" id="pwd" class="from-ipt" data-i18n="[placeholder]enter_password" tabindex="2" />
+               <p class="box-tips style-p">
+                    <!-- <i class="icon icon-triangle"></i> -->
+                    <span data-i18n="Registration"></span>
+                </p>
+            </div>
+            <!-- <div class="box-warn">
+               <p><span data-i18n="Registration"></span></p>
+               <ul>
+                  <li data-i18n="disqualification"></li>
+                  <li data-i18n="weak"></li>
+                  <li data-i18n="centre"></li>
+                  <li data-i18n="strong"></li>
+               </ul>
+            </div> -->
+            <div class="from-list">
+               <h3 class="from-name"  data-i18n="sure_modify">Repeat Password</h3>
+               <!-- <i class="icon icon-lock2"></i> -->
+               <input type="password" id="repwd" class="from-ipt"  data-i18n="[placeholder]passwordRepeatRule" tabindex="3" />
+               <p class="box-tips style-p">
+                  <!-- <i class="icon icon-triangle"></i> -->
+                  <span data-i18n="Registration"></span>
+               </p>
+            </div>
+            <div class="from-list">
+               <h3 class="from-name"  data-i18n="enter_sms">Verification Code</h3>
+               <!-- <i class="icon icon-validate"></i> -->
+               <input type="text" id="code" class="input-validate from-ipt" data-i18n="[placeholder]enter_code" tabindex="4" />
+               <img src="" style="cursor: pointer;" class="QD-num" data-i18n="[alt]refresh"  id="pic-captcha" />
+               <!-- <button class="QD-num" data-i18n="sms_code"></button> -->
+               <!-- data-type="msg"  -->
+               <p class="box-tips style-p">
+                  <!-- <i class="icon icon-triangle"></i> -->
+                  <span data-i18n="code_empty"></span>
+              </p>
+            </div>
+
+
+            <!-- <p class="box-error" data-i18n="four_chances"></p> -->
+
+
+            <div class="from-list msg-show r1">
+               <h3 class="from-name"  data-i18n="email_code">Confirmation Code</h3>
+               <input type="text" id="msg-code" class="input-validate from-ipt" data-i18n="[placeholder]enter_verify" tabindex="5" />
+                <!-- 发送至邮箱  修改版 -->
+               <!-- <button type="button" class="btn-msg QD-sms" data-type="voice" data-i18n="speech_code"></button> -->
+                <!-- 发送至邮箱  网页版 -->
+                <button type="button" class="btn-msg QD-sms" data-type="email" data-i18n="button">Send to Email</button>
+               <!-- Send to Email -->
+               <div class="box-tips  style-p">
+                    <!-- <i class="icon icon-triangle"></i> -->
+                    <span data-i18n="sms_verify"></span>
+                </div>
+            </div>
+<!-- 
+            <div class="from-list email-show show r2 ">
+               <label data-i18n="email_code"></label>
+               <i class="icon icon-email"></i>
+               <input type="text" id="email-code" class="input-email" data-i18n="[placeholder]email_verify" tabindex="6" />
+               <button class="QD-sms msg" data-type="email" data-i18n="button">Send to Email</button>
+               <p class="box-tips">
+                  <span data-i18n="email_blank"></span>
+                </p>
+            </div> -->
+          
+            <div class="from-list" style="width:645px;">
+               <label>
+                 <div class="sign-check">
+                    <input type="checkbox" id="apply"/>
+                </div>
+                <div class="sign-xieyi">
+                    <p class="font-w600">
+                        <span data-i18n="read_agree"></span>
+                        <a href="./document-index.html" target="_blank" class="sign_hr" data-i18n="Xbrick_term"></a>
+                        <a href="./document-index.html?id=1" data-i18n="p_state"  class="sign_hr" ></a>
+                    </p>
+                    <p style="padding-top: 20px;">
+                        <span data-i18n="follow_state" class="sign-xieyi">
+                        </span>
+                    </p>
+                  </div>
+                 
+               </label>
+               <!-- <p data-i18n="term_use"></p> -->
+            </div>
+            <div class="from-list box-btn" style="text-align:center;">
+               <button type="button" class="btn-sign btn-default" id="btn-submit" data-i18n="register3" disabled></button>
+               <p class="sign-log"><span data-i18n="existing_account">Already have an account?</span> <a href="login.html"  data-i18n="login_immediately" class="sign_login">Log In</a></p>
+            </div>
+           
+         </form>
+      </div>
+      <div id="mask">
+         <div class="mod-box mod1" id="mod-prompt">
+            <div class="mod-title"><i class="icon icon-smile"></i><span data-i18n="register_ok"></span></div>
+            <div class="mod-body">
+               <!-- <p data-i18n="return"><a href="./toSafeSet.html" data-i18n="safe_setting"></a></p> -->
+            </div>
+            <div class="mod-btn">
+               <a href="/" class="btn" data-i18n="after_certi"></a>
+               <a href="./toRealName.html" class="btn btn-default" data-i18n="certification"></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/register.js"></script>
+</body>
+</html>

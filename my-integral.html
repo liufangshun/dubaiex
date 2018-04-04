@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="my_scores"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+</head>
+<body>
+   <div id="wrap" class="markets other-wrap my-integral">
+      @@include('./include/header.html')
+      <div id="content">
+         <div class="m-other">
+            <div class="other-title integral"><span data-i18n="my_scores"></span></div>
+            <div class="other-body other-body2 integral">
+               <div class="log-box">
+                  <ul class="clearfix">
+                     <li class="show-vip"></li>
+                     <li><span class="show-vip"></span><p data-i18n="current_rank"></p></li>
+                     <li><span data-i18n="rank_current"></span><i class="get-integral"></i></li>
+                     <li><a href="./integral-rate.html" target="_blank" data-i18n="integral_rate"></a></li>
+                  </ul>
+                  <div class="detail">
+                     <h2 data-i18n="integral_detail"></h2>
+                     <table>
+                        <thead>
+                           <tr>
+                              <th data-i18n="time"></th>
+                              <!-- <th>类型</th> -->
+                              <th data-i18n="inte"></th>
+                              <th data-i18n="description"></th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      @@include('./include/footer.html')
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16281 1418 240 172">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #f2f2f2;
+      }
+
+      .cls-3 {
+        fill: #f2f2f2;
+      }
+
+      .cls-4 {
+        fill: #465374;
+        font-size: 14px;
+      }
+
+      .cls-4, .cls-6 {
+        font-family: PingFangSC-Regular, PingFang SC;
+      }
+
+      .cls-5 {
+        fill: #2380fe;
+      }
+
+      .cls-6 {
+        font-size: 12px;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_2103" data-name="Group 2103" transform="translate(-17297 63)">
+    <rect id="Rectangle_1132" data-name="Rectangle 1132" class="cls-1" width="240" height="160" rx="2" transform="translate(1016 1355)"/>
+    <g id="Rectangle_1133" data-name="Rectangle 1133" class="cls-2" transform="translate(1036 1395)">
+      <rect class="cls-7" width="200" height="120" rx="6"/>
+      <rect class="cls-8" x="0.5" y="0.5" width="199" height="119" rx="5.5"/>
+    </g>
+    <g id="Group_1863" data-name="Group 1863" transform="translate(15 785)">
+      <rect id="Rectangle_901" data-name="Rectangle 901" class="cls-3" width="198.303" height="28" transform="translate(1022 640)"/>
+    </g>
+    <text id="银行卡反面照" class="cls-4" transform="translate(1094 1380)"><tspan x="0" y="0">银行卡反面照</tspan></text>
+    <g id="Group_1864" data-name="Group 1864" transform="translate(14 774)">
+      <path id="Path_576" data-name="Path 576" class="cls-5" d="M.773.5H80.227c.151,0,.273.356.273.8V25.7c0,.44-.122.8-.273.8H.773C.622,26.5.5,26.144.5,25.7V1.3C.5.856.622.5.773.5Z" transform="translate(1081.5 726.5)"/>
+      <text id="点击上传" class="cls-6" transform="translate(1098 745)"><tspan x="0" y="0">点击上传</tspan></text>
+    </g>
+  </g>
+</svg>

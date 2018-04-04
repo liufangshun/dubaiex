@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- <meta charset="UTF-8"> -->
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=8">
+   <meta http-equiv="Expires" content="0">
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Cache-control" content="no-cache">
+   <meta http-equiv="Cache" content="no-cache">
+   <meta name="keywords" content="xbrick exchange"/>
+   <meta name="description" content="A multi-crypto-currency exchange"/>
+   <title data-i18n="platform"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/base.css" />
+   <link rel="stylesheet" href="./css/animate.min.css">
+   <style>
+      .col_blue{color: #009cff !important;}.col_blue:hover{color: #009cff;}
+      .idx-til{font-size: 18px; color: #555e73;padding-top: 40px;  font-weight: 700;}
+      .idx-p{font-size: 14px;  color: #666;  padding-top: 13px;font-weight: 600;}
+      .bi_money:hover{color: #009cff;}
+      .header-top{width: 100%; position:absolute; left: 0;top: 0;height: 80px;z-index: 99; background: rgba(24,26,26,.2);}
+      .header-top #header{background: rgba(24,26,26,.2);}
+      #header .w-head{background: initial;}
+   </style>
+</head>
+<body>
+   <div id="wrap" class="fixed echarts">
+      <div class="header-top">
+            @@include('./include/header.html')    
+      </div>
+
+      <!-- <div class="idx-lun">
+            <ul class="header_tabul">
+                  <li style="background: url(imgs/banner_01.png)no-repeat; background-size: 100% 600px;"></li>
+            </ul>
+            <div class="header_line">
+                  <span class="on"></span>
+                  <span></span>
+                  <span></span>
+            </div>
+      </div> -->
+
+      <div id="banner">
+			<!--  <div class="w-banner">
+         </div>   -->
+            <ul class="w-banner">
+                  <!-- <li class="on banner-two">
+                        <a href="https://www.xbrick.io/ico-details.html?id=5a445e5cd6f8013d045da9dd"></a>
+                  </li> -->
+                  <!-- <li class="banner-one on">
+                        <a href="https://www.xbrick.io/ico-details.html?id=5a6e9442d6f80143405dfc4c"></a>
+                  </li> -->
+                  <!-- <li>
+                        <div class="w-box">
+                              <img src="./imgs/vote-word.png" alt="">
+                              <a href="./coin-vote.html">
+                                    <img src="./imgs/morethan.png" alt="">
+                              </a>
+                        </div>
+                  </li> -->
+                  <!-- <li class="banner-one on " style="background: url(./imgs/banner_01.png) center center no-repeat;">
+                        <a href="https://xbc.xbrick.io/index.html" target="_blank"></a>
+                  </li> -->
+                  <li class="banner-two on" style="background: url(./imgs/banner_01.png) center center no-repeat;">
+                        
+                  </li>
+                  <!-- <li class="banner-three on">
+                        
+                  </li> -->
+            </ul>
+            <ul class="w-sign">
+                  <li class="on"></li>
+                  <!-- <li class=""></li> -->
+                  <!-- <li class=""></li> -->
+                  <!-- <li></li> -->
+            </ul>
+      </div>
+
+      <div class="idx-hq">
+          <div class="idx_list">
+                  <ul class="clearfix w-box ul_list">
+                        <li data-id="0" class="active" id='usdt_mbtc'>
+                              <p class="bi_name">MBTC/USDT</p>
+                              <p class="bi_money col_blue">--</p>
+                              <p class="bi_fu">--</p>
+                        </li>
+                        <li data-id="1" id='usdt_eth'>
+                              <p class="bi_name">USDT/ETH</p>
+                              <p class="bi_money">--</p>
+                              <p class="bi_fu">--</p>
+                        </li>
+                        <li data-id="2" id='bitcny_mbtc'>
+                              <p class="bi_name">BITCNY/MBTC</p>
+                              <p class="bi_money">--</p>
+                              <p class="bi_fu">--</p>
+                        </li>
+                        <li data-id="3" id='bitcny_eth'>
+                              <p class="bi_name">BITCNY/ETH</p>
+                              <p class="bi_money">--</p>
+                              <p class="bi_fu">--</p>
+                        </li>
+                  </ul>
+          </div>
+      </div>
+     
+      <div class="idx_there_dta">
+            <div class="w1200 m_atuo idx_js">
+                  <div class="f_left border_bt79">
+                        <a href="javascrpit:void(0)"><img src="imgs/ctn_ico3.png" alt="Real-time Chart"></a>
+                        <h3 class="idx-til">Real-time Chart</h3>
+                        <p class="idx-p">View On Webpage, No Installation Required</p>
+                  </div>	
+                  <div class="f_left border_btee">
+                        <a href="javascrpit:void(0)"><img src="imgs/ctn_ico2.png" alt="Online Trading"></a>
+                        <h3 class="idx-til">Online Trading</h3>
+                        <p class="idx-p">Easy Operation, Quick Hands-on</p>
+                  </div>	
+                  <div class="f_left border_bt47">
+                        <a href="javascrpit:void(0)"><img src="imgs/ctn_ico1.png" alt="Market Information"></a>
+                        <h3 class="idx-til">Market Information</h3>
+                        <p class="idx-p">Latest News, Market Updates</p>
+                  </div>	
+            </div>
+      </div>
+
+
+      <div class="section section-second" style="display: block !important;">
+            <div class="Create_div">
+                  <h2 data-i18n="create_start">Create an Account to Start Trading</h2>
+                  <p data-i18n="assets_exchange">Professional Crypto Currency Exchange Services</p>
+                  <p class="mt80"><a href="./r.html" data-i18n="sign_up" class="a_btn">SIGN UP FOR FREE</a></p>
+            </div>
+      </div>
+      
+      @@include('./include/footer.html')
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/echarts.min.js"></script>
+   <script src="./js/jquery.mousewheel.js"></script>
+   <script src="./js/jquery.jscrollpane.min.js"></script>
+   <script src="./js/Protobuffer/long.min.js"></script>
+   <script src="./js/Protobuffer/bytebuffer.min.js"></script>
+   <script src="./js/Protobuffer/protobuf.min.js"></script>
+   <script src="./js/jquery.qrcode.js"></script>
+   <script src="./js/common.js"></script>
+
+
+
+   <!-- <script src="./js/trade.js"></script> -->
+</body>
+</html>

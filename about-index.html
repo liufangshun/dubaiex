@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XBrick</title>
+	<link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+	<div id="header">
+		<div class="w-head">
+			<a href="/">
+		      <img src="./imgs/logo.svg" alt="logo" style="width: 100px;" />
+		   </a>
+			<ul class="w-menu">
+		         <li><a href="/" data-i18n="home"></a></li>
+					<li class="on"><a href="./about-index.html" data-i18n="about_us"></a></li>
+					<li><a href="./document-index.html" data-i18n="doc_protocol"></a></li>
+					<li class="active"><a href="./integral-rate.html" data-i18n="inte_rate"></a></li>
+		   </ul>
+		   <div class="w-set">
+		   	<div class="lang-box">
+	            <label class="show-txt"><span>English</span></label>
+	            <ul class="list-lang">
+	               <li data-lang="en"><span>English</span></li>
+	               <li data-lang="zh-cn"><span>中文</span></li>
+	            </ul>
+	         </div>
+		   </div>
+		</div>
+	</div>
+	<div class="banner">
+		<img src="./imgs/about.svg" alt="广告">
+		<img src="./imgs/bottomarrow.svg" alt="">
+	</div>
+	<div class="content">
+		<div class="w-box">
+			<!-- <div class="c-top">
+				<h2>关于我们</h2>
+				<p>XBrick网(www.XBrick.com)是由上海区链网络科技有限公司于2016年1月创办，又名XBrick交易所。</p>
+				<p>XBrick网致力于为大家挑选出安全并具有投资价值的虚拟货币，全力保障用户的信息安全和交易安全，让大家都在</p>
+				<p>这里获取快速、安全、稳定和优质的交易体验。</p>
+			</div> -->
+			<ul class="c-bottom clearfix">
+				<li>
+					<img src="./imgs/about-1.svg" alt="">
+					<img src="./imgs/about-11.svg" alt="">
+					<p data-i18n="excellent"></p>
+					<span data-i18n="core_consist"></span>
+				</li>
+				<li>
+					<img src="./imgs/about-2.svg"  alt="">
+					<img src="./imgs/about-22.svg"  alt="">
+					<p data-i18n="technology"></p>
+					<span data-i18n="international"></span>
+				</li>
+				<li>
+					<img src="./imgs/about-3.svg"  alt="">
+					<img src="./imgs/about-33.svg"  alt="">
+					<p data-i18n="compliance"></p>
+					<span data-i18n="cooperation"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="select">
+		<div class="w-box">
+			<div class="s-left">
+				<h2 data-i18n="Choose Us"></h2>
+				<p data-i18n="top_block"></p>
+				<ul class="clearfix">
+					<li>
+						<p data-i18n="cold_hot"></p>
+						<span></span>
+						<span data-i18n="ensure_safe"></span>
+					</li>
+					<li>
+						<p data-i18n="ssl"></p>
+						<span></span>
+						<span data-i18n="measures_as"></span>
+					</li>
+					<li>
+						<p data-i18n="gslb_server"></p>
+						<span></span>
+						<span data-i18n="stable"></span>
+					</li>
+					<li>
+						<p data-i18n="high_performance"></p>
+						<span></span>
+						<span data-i18n="engine_enjoy"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="s-right">
+				<img src="./imgs/select.svg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="link">
+		<div class="w-box clearfix">
+			<h2 data-i18n="contact_us"></h2>
+			<ul class="clearfix">
+				<li>
+					<p>Address</p>
+					<p>Level 18, 111 Pacific Highway</p>
+					<p>North Sydney, 2060</p>
+					<p>New South Wales</p>
+					<p>AUSTRALIA</p>
+				</li>
+				<li>
+					<p>Email</p>
+					<p>support@xbrick.io</p>
+				</li>
+			</ul>	
+		</div>
+	</div>
+	<div class="section section-nav">
+      <ul class="w-box clearfix">
+         <li><a href="./about-index.html" data-i18n="about_us"></a></li>
+         <!-- <li><a href="./about-index.html" data-i18n="contact_us"></a></li> -->
+         <li><a href="./integral-rate.html" data-i18n="inte_rate"></a></li>
+         <li><a href="./document-index.html" data-i18n="privacy1"></a></li>
+         <!-- <li><a href="javascript:;" data-i18n="mobile_app"></a></li> -->
+      </ul>
+   </div>
+	@@include('./include/footer.html')
+	<script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/jquery.form.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/about.js"></script>
+</body>
+</html>

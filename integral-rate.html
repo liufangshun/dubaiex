@@ -1,0 +1,480 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XBrick</title>
+	<link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+	<div id="header">
+		<div class="w-head">
+			<a href="/">
+		      <img src="./imgs/logo.svg" alt="logo" style="width: 100px;" />
+		   </a>
+			<ul class="w-menu">
+		       <li><a href="/" data-i18n="home"></a></li>
+				<li><a href="./about-index.html" data-i18n="about_us"></a></li>
+				<li ><a href="./document-index.html" data-i18n="doc_protocol"></a></li>
+				<li class="on"><a href="./integral-rate.html" data-i18n="inte_rate"></a></li>
+		   </ul>
+		   <div class="w-set">
+		   	<div class="lang-box">
+	            <label class="show-txt"><span>English</span></label>
+	            <ul class="list-lang">
+	               <li data-lang="en"><span>English</span></li>
+	               <li data-lang="zh-cn"><span>中文</span></li>
+	            </ul>
+	         </div>
+		   </div>
+		</div>
+	</div>
+	<div class="banner">
+		<img src="./imgs/rate.png" alt="广告">
+	</div>
+	<div class="container rate">
+		<div class="w-box">
+			<ul class="aside" id='aside-tab'>
+				<li data-id='0' data-i18n="account_leve"></li>
+				<li data-id='1' data-i18n="trade_fee"></li>
+				<li data-id='2' data-i18n="deposit_fee"></li>
+			</ul>
+			<div class="article">
+				<!-- <p>文档协议 > 积分等级</p> -->
+				<h2 data-i18n="earn_point"></h2>
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th data-i18n="action1"></th>
+							<th data-i18n="point_detail"></th>
+							<th data-i18n="points1"></th>
+							<th data-i18n="point_limit"></th>
+							<th data-i18n="remarks"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td data-i18n="real_sign"></td>
+							<td data-i18n="one_point"></td>
+							<td>+1000</td>
+							<td>1000</td>
+							<td></td>
+						</tr>		
+		<!-- 				<tr>
+							<td>2</td>
+							<td>认证手机或以手机注册</td>
+							<td>首次积分</td>
+							<td>+1000</td>
+							<td>1000</td>
+							<td></td>
+						</tr> -->		
+						<tr>
+							<td>2</td>
+							<td data-i18n="verify_add"></td>
+							<td data-i18n="one_point"></td>
+							<td>+1000</td>
+							<td>1000</td>
+							<td></td>
+						</tr>		
+						<tr>
+							<td>3</td>
+							<td data-i18n="set_tran"></td>
+							<td data-i18n="one_point"></td>
+							<td>+1000</td>
+							<td>1000</td>
+							<td></td>
+						</tr>			
+						<td>4</td>
+							<td data-i18n="real_auth"></td>
+							<td data-i18n="recurre"></td>
+							<td>+2000</td>
+							<td data-i18n="unlimited"></td>
+							<td></td>
+						</tr>
+						<td>5</td>
+							<td data-i18n="first_deposit"></td>
+							<td data-i18n="one_point"></td>
+							<td>+2000</td>
+							<td>2000</td>
+							<td></td>
+						</tr>		
+						<td>6</td>
+							<td data-i18n="login"></td>
+							<td data-i18n="daily_points"></td>
+							<td>+2</td>
+							<td data-i18n="unlimited"></td>
+							<td></td>
+						</tr>		
+					<!-- 	<td>7</td>
+							<td data-i18n="recharge"></td>
+							<td data-i18n="recurre"></td>
+							<td>&times;1%</td>
+							<td data-i18n="unlimited"></td>
+							<td data-i18n="per_deposit"></td>
+						</tr>	 -->	
+						<td>7</td>
+							<td data-i18n="trade_volume"></td>
+							<td data-i18n="recurre"></td>
+							<td>A * B</td>
+							<td data-i18n="unlimited"></td>
+							<td data-i18n="per_trade"></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 data-i28n="rule_account"></h2>
+				<table>
+					<thead>
+					   <tr>
+                     <th data-i18n="levels"></th>
+                     <th data-i18n="points2"></th>
+                  </tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>VIP-1</td>
+							<td>&ge;1</td>
+						</tr>	
+						<tr>
+							<td>VIP-2</td>
+							<td>&ge;10000</td>
+						</tr>	
+						<tr>
+							<td>VIP-3</td>
+							<td>&ge;40000</td>
+						</tr>	
+						<tr>
+							<td>VIP-4</td>
+							<td>&ge;100000</td>
+						</tr>	
+						<tr>
+							<td>VIP-5</td>
+							<td>&ge;300000</td>
+						</tr>	
+						<tr>
+							<td>VIP-6</td>
+							<td>&ge;800000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="article hide">
+				<!-- <p>文档协议 > 积分等级</p> -->
+				<h2 data-i18n="formula"></h2>
+				<p data-i18n="suppose_fee"></p>
+				<p data-i18n="maker_fee"></p>
+				<p data-i18n="maker_accord"></p>
+				<table class="vipgrade">
+					<thead>
+					   <tr>
+                     <th data-i18n="levels"></th>
+                     <th data-i18n="maker"></th>
+                     <th data-i18n="taker"></th>
+                  </tr>
+					</thead>
+					<tbody>
+						<!-- <tr>
+							<td>VIP-0</td>
+							<td>X*1</td>
+							<td>Y*1</td>
+						</tr>	
+						<tr>
+							<td>VIP-1</td>
+							<td>X*0.9</td>
+							<td>Y*1</td>
+						</tr>	
+						<tr>
+							<td>VIP-2</td>
+							<td>X*0.8</td>
+							<td>Y*1.2</td>
+						</tr>	
+						<tr>
+							<td>VIP-3</td>
+							<td>X*0.76</td>
+							<td>Y*1.3</td>
+						</tr>	
+						<tr>
+							<td>VIP-4</td>
+							<td>X*0.7</td>
+							<td>Y*1.5</td>
+						</tr>	
+						<tr>
+							<td>VIP-5</td>
+							<td>X*0.6</td>
+							<td>Y*2</td>
+						</tr> -->
+					</tbody>
+				</table>
+				<h2 data-i18n="trade_fee"></h2>
+				<div class="other-body">
+               <ul class="tab-change">
+                  <li class="on" data-id="mbtc" data-type="0">MBTC</li>
+                  <li data-id="eth" data-type="1">ETH</li>
+                  <li data-id="bitcny" data-type="2">BITCNY</li>
+                  <li data-id="usdt" data-type="3">USDT</li>
+               </ul>
+               <div class="dropdown-box box-right">
+               <!--    <div class="dropdown-txt"><span>CNY</span><i class="icon icon-down2"></i></div>
+                  <ul class="dropdown-list">
+                     <li><img src="./imgs/c-btc.png"><span>BTC</span></li>
+                     <li class="on"><img src="./imgs/c-cny.png"><span>CNY</span></li>
+                     <li><img src="./imgs/c-etc.png"><span>ETC</span></li>
+                  </ul> -->
+                  <div class="search-box">
+                     <input type="text" id="market-search" placeholder="Search" />
+                     <ul class="market-list"></ul>
+                  </div>
+               </div>
+               <div class="other-tables">
+                  <table class="table-1th active">
+                     <thead>
+                        <tr>
+                       		<th rowspan="2" data-i18n="levels"></th>
+                       		<th colspan="2">VIP-1</th>
+                       		<th colspan="2">VIP-2</th>
+                       		<th colspan="2">VIP-3</th>
+                       		<th colspan="2">VIP-4</th>
+                       		<th colspan="2">VIP-5</th>
+                       		<th colspan="2">VIP-6</th>
+                       		<!-- <th colspan="2">VIP-7</th> -->
+                        </tr>     
+                        <tr>
+                       		<th>Maker</th>
+                       		<th>Taker</th>	
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>	
+                       		<!-- <th>Maker</th>
+                       		<th>Taker</th> -->
+                        </tr>
+                     </thead>
+                     <tbody>
+                     </tbody>
+                  </table>
+                  <table class="table-2th">
+                      <thead>
+                        <tr>
+                       		<th rowspan="2" data-i18n="levels"></th>
+                       		<th colspan="2">VIP-1</th>
+                       		<th colspan="2">VIP-2</th>
+                       		<th colspan="2">VIP-3</th>
+                       		<th colspan="2">VIP-4</th>
+                       		<th colspan="2">VIP-5</th>
+                       		<th colspan="2">VIP-6</th>
+                       		<!-- <th colspan="2">VIP-7</th> -->
+                        </tr>     
+                        <tr>
+                       		<th>Maker</th>
+                       		<th>Taker</th>	
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>	
+                       	<!-- 	<th>Maker</th>
+                       		<th>Taker</th> -->
+                        </tr>
+                     </thead>
+                     <tbody>
+                      	<tr>
+                        </tr>
+                     </tbody>
+                  </table> 
+                  <table class="table-3th">
+                     <thead>
+                        <tr>
+                       		<th rowspan="2" data-i18n="levels"></th>
+                       		<th colspan="2">VIP-1</th>
+                       		<th colspan="2">VIP-2</th>
+                       		<th colspan="2">VIP-3</th>
+                       		<th colspan="2">VIP-4</th>
+                       		<th colspan="2">VIP-5</th>
+                       		<th colspan="2">VIP-6</th>
+                       		<!-- <th colspan="2">VIP-7</th> -->
+                        </tr>     
+                        <tr>
+                       		<th>Maker</th>
+                       		<th>Taker</th>	
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                    <!--    		<th>Maker</th>
+                       		<th>Taker</th> -->
+                        </tr>
+                     </thead>
+                     <tbody>
+                      	<tr>
+                        </tr>
+                     </tbody>
+                  </table>   
+                  <table class="table-4th">
+                     <thead>
+                        <tr>
+                       		<th rowspan="2" data-i18n="levels"></th>
+                       		<th colspan="2">VIP-1</th>
+                       		<th colspan="2">VIP-2</th>
+                       		<th colspan="2">VIP-3</th>
+                       		<th colspan="2">VIP-4</th>
+                       		<th colspan="2">VIP-5</th>
+                       		<th colspan="2">VIP-6</th>
+                       		<th colspan="2">VIP-6</th>
+                        </tr>     
+                        <tr>
+                       		<th>Maker</th>
+                       		<th>Taker</th>	
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                       		<th>Maker</th>
+                       		<th>Taker</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                      	<tr>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+			</div>
+			<div class="article hide">
+				<!-- <p>文档协议 > 积分等级</p> -->
+				<h2 data-i18n="formula_lev"></h2>
+				<p data-i18n="equals"></p>
+				<table class="recharge-rate">
+					<thead>
+					   <tr>
+                     <th data-i18n="levels"></th>
+                     <!-- <th>人民币充值手续费</th> -->
+                     <th data-i18n="digital_asset"></th>
+                     <th data-i18n="with_fee"></th>
+                  </tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>VIP-0</td>
+							<td>0</td>
+							<td>0</td>
+							<td>X*1</td>
+							<td>Y*1</td>
+						</tr>	
+						<tr>
+							<td>VIP-1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>X*0.9</td>
+							<td>Y*1</td>
+						</tr>	
+						<tr>
+							<td>VIP-2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>X*0.8</td>
+							<td>Y*1.2</td>
+						</tr>	
+						<tr>
+							<td>VIP-3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>X*0.76</td>
+							<td>Y*1.3</td>
+						</tr>	
+						<tr>
+							<td>VIP-4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>X*0.7</td>
+							<td>Y*1.5</td>
+						</tr>	
+						<tr>
+							<td>VIP-5</td>
+							<td>0</td>
+							<td>0</td>
+							<td>X*0.6</td>
+							<td>Y*2</td>
+						</tr>
+					</tbody>
+				</table>
+				<h2 data-18n="digital_fee"></h2>
+				<table class="deposit-rate">
+					<thead>
+                  <tr>
+                 		<th rowspan="2" data-i18n="levels"></th>
+                 		<th colspan="2">VIP-1</th>
+                 		<th colspan="2">VIP-2</th>
+                 		<th colspan="2">VIP-3</th>
+                 		<th colspan="2">VIP-4</th>
+                 		<th colspan="2">VIP-5</th>
+                 		<th colspan="2">VIP-6</th>
+                 		<!-- <th colspan="2">VIP-7</th> -->
+                  </tr>     
+                  <tr>
+                 		<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	
+                 		<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	
+                 		<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	
+                 		<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	
+                 		<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	
+                 		<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	
+                 	<!-- 	<th data-i18n="recharge"></th>
+                 		<th data-i18n="cash"></th>	 -->
+                  </tr>
+               </thead>
+               <tbody>
+                	<tr>
+                  </tr>
+              	</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="section section-nav">
+      <ul class="w-box clearfix">
+         <li><a href="./about-index.html" data-i18n="about_us"></a></li>
+         <!-- <li><a href="./about-index.html" data-i18n="contact_us"></a></li> -->
+         <li><a href="./integral-rate.html" data-i18n="inte_rate"></a></li>
+         <li><a href="./document-index.html" data-i18n="privacy1"></a></li>
+         <!-- <li><a href="javascript:;" data-i18n="mobile_app"></a></li> -->
+      </ul>
+   </div>
+	@@include('./include/footer.html')
+	<script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/jquery.form.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title data-i18n="person_detail"></title>
+   <link rel="shortcut icon" href="./logo.ico">
+   <link rel="stylesheet" href="./css/common.css">
+   <link rel="stylesheet" href="./css/other.css">
+   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+</head>
+<style>
+  .bgf8{background-color: #f8f8f8}
+  .f14{font-size: 14px;color: #464646;}.i-line{position: absolute;width:1px;height:120px; top:85px; background-color:#e5e5e5;} .color90{font-size: 14px;color: #009cff;margin-left: 40px} .mt40{margin-top: 40px;} .namestyle{display: inline-block; width: 40%; text-align: right;}.ipt-txt{ border: 1px solid #ccc;  height: 32px; font-size: 12px; padding-left: 5px; border-radius: 2px; }
+</style>
+<script>
+   
+</script>
+<body class="bgf8">
+   <div id="wrap" class="markets other-wrap my-userinfo">
+      <div id="wrap" class="markets market">
+          <div class="sign-heads" style="height: 80px;background-color: #192748;">
+              @@include('./include/header.html')
+          </div>
+          <div id="content">
+            <div class="m-other">
+                <div class="other-title"><span data-i18n="person_detail" class="tradTie"></span></div>
+                <div class="other-body other-body2">
+                  <div class="pege-left">
+                      <ul id="accordion" class="accordion">
+                          <li>       
+                            <div class="link">
+                               <img src="./imgs/orders.png"  class="pagelogo"/>orders<img src="./imgs/jia.png" class="jsopen"/></div>              
+                                <ul class="submenu">                      
+                                    <li><a href="./trade-order.html">Open Orders</a></li>
+                                    <li><a href="./trade-orderHistory.html">Orders History</a></li>
+                                    <li><a href="./turnoverLog.html">Trade History</a></li>
+                                    <li><a href="./toLimitSet.html">Proce Protection</a></li>
+                                </ul>
+                           </li>
+                          <li>
+                            <div class="link">
+                                <img src="./imgs/setting.png"  class="pagelogo"/>Settings<img src="./imgs/jia.png" class="jsopen"/></div>  
+                                <ul class="submenu">
+                                    <li><a href="./toRealName.html">Real-name Verification</a></li>
+                                    <li><a href="./toSafeSet.html">Security Settings</a></li>
+                                    <li><a href="./modify-loginPwd.html">Modify login password</a></li>
+                                    <li><a href="./modify-buzPwd.html">Set Trading Password</a></li>
+                                </ul>
+                          </li>
+                          <li>
+                            <div class="link bgf1">
+                                <img src="./imgs/my-1.png"  class="pagelogo"/>Account<img src="./imgs/jia.png" class="jsopen"/></div> 
+                                <ul class="submenu" style="display: block;">
+                                  <li><a href="#" class="col90">My Profile</a></li>
+                                  <li><a href="#">Sunbmit a request</a></li>
+                                </ul>
+                          </li>
+                        </ul>
+                  </div>
+                
+                  <div class="user-box">
+                    <div class="user-detail clearfix">
+                        <div class="user-infohead">
+                            <p>
+                                <span  data-i18n="real_name" class="f14 namestyle"></span>
+                                <a class="real-name color90" ></a>
+                            </p>
+                            <p class="mt40">
+                              <span data-i18n="nickname" class="f14 namestyle"></span>
+                              <label class="nickname-tip color90" data-i18n="nickname_empty"></label>
+                              <input type="text" class="input-box ipt-txt hide" id="nickname" data-i18n="[placeholder]new_nickname" placeholder="new nickname (20 characters)">
+                              <a href="javascript:;" class="modify-txt modify-cg color90" data-i18n="modify">Modify</a>
+                              <a href="javascript:;" class="modify-txt hide modify-ok color90" data-i18n="certain">OK</a>
+                            </p>
+                            <p class="mt40"><span data-i18n="tra_pwd" class="f14 namestyle"></span><a href="./modify-buzPwd.html" class="buz-pwd color90" data-i18n="modify"></a></p>
+                        </div>
+                        <i class="i-line"></i>
+                        <div  class="clearfix"style="float: left;width:330px; padding: 40px;background-color: #f8f8f8;min-height:200px;">
+                            <p>
+                              <span data-i18n="account_name" class="f14 namestyle"></span>
+                              <span class="modify-account"><span class="email-txt color90"></span><a href="./bind-email.html" class="modify-txt hide set-email"></a></span>
+                            </p>
+                            <p class="mt40"><span data-i18n="login_pwd" class="f14 namestyle"></span><a data-i18n="modify" class="color90"></a></p>
+                        </div>
+                    </div>
+                     
+                    <div class="adduserInfctn" >
+                        <div class="level-box">
+                          <p><label><span data-i18n="security_level" class="f14"></span><span class="safe-tip" style="color:#00b34f;"></span></label></p>
+                          <p><span data-i18n="you_set"></span><span class="value safe-count">0</span><span data-i18n="protection"></span></p>
+                          <p><a href="./toSafeSet.html" data-i18n="check"></a></p>
+                        </div>
+                        <div class="level-box" style="float: right;">
+                          <p><label><span data-i18n="Certify" class="f14"></span><span class="verify-level"  style="color:#ff6351;"></span></label></p>
+                          <p class="verify-tips"></p>
+                          <p><a href="./toRealName.html?type=auth" class="auth" data-i18n="auth"></a></p>
+                        </div>
+                        <!-- <div class="level-box">
+                          <p><label><span data-i18n="integral"></span><span class="vip-level red"></span></label></p>
+                          <p class="level_tips"><span data-i18n="fee_rate"></span><span class="value rate-value">0.00%</span><span>.</span><span data-i18n="fee_rate2"></span></p>
+                          <p><a href="./my-integral.html" data-i18n="check"></a></p>
+                        </div> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          @@include('./include/footer.html')
+          <div id="mask">
+            <div class="mod-box mod2" id="mod-create">
+                <div class="mod-title"><span data-i18n="bind_succeed"></span><i class="icon icon-close" data-name="mod-create" data-action="close"></i></div>
+                <div class="mod-body">
+                  <form class="mod-form">
+                      <div class="form-group">
+                        <p class="callback-msg" data-i18n="API_apply"></p>
+                        <ul class="other-msg">
+                            <li>API 访问密钥(Access Key) : <span class="access-key">7e512f45-c952b023-7b6d4db3-32cfa</span></li>
+                            <li>API 秘密密钥(Secret Key) : <span class="secret-key">ca1ef48a-60086cf3-30217cf8-24990</span></li>
+                            <li><span data-i18n="IP_address"></span><span class="ip-addr">116.226.65.133</span></li>
+                        </ul>
+                      </div>
+                      <div class="form-group tc"><button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button></div>
+                  </form>
+                </div>
+            </div>
+            <div class="mod-box mod2" id="mod-prompt">
+                <div class="mod-title"><span data-i18n="prompt"></span><i class="icon icon-close" data-action="close"></i></div>
+                <div class="mod-body tips-box">
+                  <p class="tips-txt"></p>
+                  <p class="tips-btn">
+                      <button type="button" class="btn btn-default" data-action="close" data-i18n="certain"></button>
+                  </p>
+                </div>
+            </div>
+          </div>
+      </div>
+   </div>
+   <script src="./js/jquery-1.9.1.min.js"></script>
+   <script src="./js/i18next.js"></script>
+   <script src="./js/common.js"></script>
+   <script src="./js/order.js"></script>
+</body>
+</html>
